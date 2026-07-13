@@ -186,19 +186,31 @@
     tr:last-child td, tr:last-child th { border-bottom: none; }
     .note { font-size: 12px; color: var(--muted); margin-top: 8px; }
 
-    /* Footer */
-    footer {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 30px 24px;
-      border-top: 1px solid var(--rule);
+    /* Header CTA (sticky) */
+    .hdr-cta {
+      margin-left: 18px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 999px;
       font-size: 13px;
-      color: var(--muted);
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px;
+      font-weight: 600;
+      white-space: nowrap;
     }
+    .hdr-cta:hover { background: var(--accent-ink); color: #fff; }
+
+    /* Metrics strip */
+    .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+    .metric {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 22px 18px;
+      text-align: center;
+    }
+    .metric-num { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; color: var(--accent); }
+    .metric-label { font-size: 13px; color: var(--muted); margin-top: 6px; }
   </style>
 <script type="application/ld+json">
 {
@@ -219,12 +231,12 @@
   <div class="nav">
     <div class="wordmark">ZQM Computing <span>— Attestation &amp; Forensics</span></div>
     <nav>
-      <a href="#proof">Proof</a>
       <a href="#services">Services</a>
       <a href="#stack">Stack</a>
       <a href="#faq">FAQ</a>
       <a href="#engage">Engage</a>
     </nav>
+    <a class="hdr-cta" href="tel:+13862659994">Call (386) 265-9994</a>
   </div>
 </header>
 
@@ -235,6 +247,16 @@
     <h1>Managed IT, secured and cloud-smart — for Florida businesses, ready before storm season.</h1>
     <p class="lead">We bundle the four services Florida SMBs actually need in 2026: managed endpoint support, preemptive cybersecurity, cloud cost control (FinOps), and AI consulting — delivered local and attestation-grade.</p>
     <a class="cta" href="mailto:zqmcomputing@gmail.com?subject=Fleet%20Attestation%20Engagement">Let's talk →</a>
+  </section>
+
+  <section id="metrics" class="metrics">
+    <!-- TODO: replace bracketed placeholders with real ZQM figures before publishing -->
+    <div class="metrics-grid">
+      <div class="metric"><div class="metric-num">[X]+</div><div class="metric-label">endpoints under attestation</div></div>
+      <div class="metric"><div class="metric-num">[XX]%</div><div class="metric-label">avg cloud spend recovered</div></div>
+      <div class="metric"><div class="metric-num">24/7</div><div class="metric-label">storm-season on-call</div></div>
+      <div class="metric"><div class="metric-num">[X] min</div><div class="metric-label">avg response time</div></div>
+    </div>
   </section>
 
   <section id="services">
@@ -464,6 +486,7 @@
         <h3>Service area</h3>
         <p>New Smyrna Beach and the Volusia / Flagler Atlantic coast, Florida. On-site or remote.</p>
         <p>Call or text for Tier 1/2 escalation — local, no ticket tiers that loop you forever.</p>
+        <p>Call or text: <a href="tel:+13862659994">(386) 265-9994</a></p>
         <p><a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></p>
       </div>
     </div>
@@ -473,6 +496,7 @@
 
 <footer>
   <div>© ZQM Computing / ZQM-Labs</div>
+  <div>Call/text: <a href="tel:+13862659994">(386) 265-9994</a></div>
   <div>Contact: <a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></div>
   <div style="width:100%;">Privacy: we collect nothing beyond what you send us by email. No trackers, no cookies.</div>
 </footer>
