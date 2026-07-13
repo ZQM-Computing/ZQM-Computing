@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0c0f" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='system-ui'>⚡</text></svg>" />
+  <meta name="description" content="ZQM Computing — Windows fleet attestation, forensics, and endpoint trust. Alex Zelenski." />
+  <meta property="og:title" content="ZQM Computing — Windows Fleet Attestation & Forensics" />
+  <meta property="og:description" content="Attested deliverables, provable endpoint evidence, operator-grade tooling." />
+  <meta property="og:image" content="og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>ZQM Computing — Windows Fleet Attestation &amp; Forensics</title>
+  <style>
+    :root {
+      --ink: #0b0c0f;
+      --ink-2: #1a1c22;
+      --ink-3: #2b2e36;
+      --muted: #8a8f9b;
+      --surface: #f6f5f3;
+      --paper: #ffffff;
+      --accent: #c9512c;
+      --accent-ink: #7a2e17;
+      --rule: #e0ded8;
+      --ok: #186a4b;
+      --warn: #a36a00;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --font-mono: "SF Mono", "Cascadia Code", ui-monospace, monospace;
+      --max: 860px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--surface);
+      color: var(--ink);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent-ink); }
+    a:hover { color: var(--accent); }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(246,245,243,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .wordmark {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      font-size: 16px;
+    }
+    .wordmark span { color: var(--muted); font-weight: 400; }
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-2);
+    }
+    nav a:hover { color: var(--accent); }
+
+    /* Layout */
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    section:last-child { border-bottom: none; }
+
+    /* Hero */
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: clamp(30px, 4.8vw, 50px);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      font-weight: 800;
+      margin: 0 0 18px;
+      max-width: 680px;
+    }
+    .lead {
+      font-size: 17px;
+      color: var(--ink-2);
+      max-width: 600px;
+      margin: 0 0 28px;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--ink);
+      color: var(--paper);
+      text-decoration: none;
+      padding: 11px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .cta:hover { background: var(--accent); color: #fff; }
+
+    /* Proof list */
+    h2 {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.015em;
+      margin: 0 0 16px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+    p { margin: 0 0 12px; }
+    ul { margin: 0; padding-left: 22px; }
+    li { margin-bottom: 8px; font-size: 15px; }
+
+    .proof {
+      display: grid;
+      gap: 14px;
+    }
+    .proof-item {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 18px 20px;
+    }
+    .proof-item .sig {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 8px;
+      word-break: break-word;
+    }
+    .status-dot {
+      display: inline-block;
+      width: 8px; height: 8px; border-radius: 50%;
+      margin-right: 6px;
+      background: var(--ok);
+    }
+    .status-dot.warn { background: var(--warn); }
+
+    /* Stack */
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .stack-cell {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .stack-cell h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); margin-bottom: 10px; }
+
+    /* Pricing */
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align: left; padding: 12px 8px; border-bottom: 1px solid var(--rule); }
+    th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
+    tr:last-child td, tr:last-child th { border-bottom: none; }
+    .note { font-size: 12px; color: var(--muted); margin-top: 8px; }
+
+    /* Footer */
+    footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 30px 24px;
+      border-top: 1px solid var(--rule);
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="wordmark">ZQM Computing <span>— Attestation &amp; Forensics</span></div>
+    <nav>
+      <a href="#proof">Proof</a>
+      <a href="#stack">Stack</a>
+      <a href="#engage">Engage</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="eyebrow">Operator: Alex Zelenski</div>
+    <h1>Verified Windows fleet attestation — provable endpoint evidence, sold by artifact.</h1>
+    <p class="lead">We audit Windows fleets for TPM/BitLocker state, driver provenance, and code-signing integrity. Output is a detached CMS-signed deliverable your buyers or clients can verify without our tooling.</p>
+    <a class="cta" href="mailto:zqmcomputing@gmail.com?subject=Fleet%20Attestation%20Engagement">Request engagement →</a>
+  </section>
+
+  <section id="proof">
+    <div class="eyebrow">What you can verify</div>
+    <h2>Proven, not promised.</h2>
+    <p>Every attestation deliverable is backed by measurable evidence generated at endpoint: hash maps, certificate chains, TPM device paths, driver stores, and manifest hashes.</p>
+    <div class="proof">
+      <div class="proof-item">
+        <div><span class="status-dot"></span><strong>TPM/BitLocker attestation</strong></div>
+        <div>Measured boot status, protector metadata, and FVEK alignment against TPM ownership.</div>
+        <div class="sig">urn:zqm:attestation:tpm-bitlocker</div>
+      </div>
+      <div class="proof-item">
+        <div><span class="status-dot"></span><strong>Windows driver audit</strong></div>
+        <div>Full kernel-driver population cross-checked against WHQL catalog signatures. Unsigned or cross-cert fatals surfaced with file path and PID.</div>
+        <div class="sig">urn:zqm:attestation:driver-audit</div>
+      </div>
+      <div class="proof-item">
+        <div><span class="status-dot"></span><strong>Code-signing provenance</strong></div>
+        <div>Cert CN chain, timestamp authority, and detached CMS signature trail for every shipped deliverable.</div>
+        <div class="sig">urn:zqm:attestation:signature-provenance</div>
+      </div>
+      <div class="proof-item">
+        <div><span class="status-dot warn"></span><strong>Chain integrity / manifest</strong></div>
+        <div>Chunk proofs and rolling SHA-256 manifest verified end-to-end. Toroidal DNA hash tie-out confirmed.</div>
+        <div class="sig">urn:zqm:attestation:chain-integrity</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="eyebrow">What we build and evaluate</div>
+    <h2>Software, hardware, and compute — operating at the infrastructure layer.</h2>
+    <p>ZQM Computing operates across the endpoint stack itself: software layer automation, hardware lifecycle and benchmarking, and advanced compute models including doubly-linked intelligence deployments.</p>
+
+    <div class="stack-grid">
+      <div class="stack-cell">
+        <h3>Software Consulting</h3>
+        <ul>
+          <li>Windows fleet automation — Fleet + osquery deployment, Sigma authoring</li>
+          <li>Driver and kernel audit tooling</li>
+          <li>PowerShell / Python operational pipelines</li>
+          <li>Code-signing, CMS attestation, provenance workflows</li>
+          <li>CI/CD via Woodpecker; Vault-backed secrets</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Hardware Consulting</h3>
+        <ul>
+          <li>Workstation and server capacity planning / procurement review</li>
+          <li>BMC inventory (iDRAC, Redfish) and TLS-roll review</li>
+          <li>Dell NVMe driver-store auditing; SMART where readable</li>
+          <li>Mesh LAN device mapping across garden nodes</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Advanced Computing</h3>
+        <ul>
+          <li>Toroidal DNA provenance — chunk-proof chains with rolling SHA-256</li>
+          <li>Quantum-simulation and PQC-readiness assessments</li>
+          <li>zbit benchmark automation on mesh hardware</li>
+          <li>Doubly-linked intelligence mesh: NATS + Yggdrasil + CoreDNS</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Placement policy</h3>
+        <ul>
+          <li>Windows-first endpoint surface</li>
+          <li>NO Velociraptor / Wazuh / Elastic as product surface</li>
+          <li>Upstream FOSS licenses preserved</li>
+          <li>Buyer owns methodology and evidence</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="engage">
+    <div class="eyebrow">Commercial</div>
+    <h2>Engagement model</h2>
+    <p>Direct attestation deliverables, hourly automation, and retainers. Contact only at <a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a>.</p>
+    <table>
+      <tr><th>Type</th><th>Range</th><th>Notes</th></tr>
+      <tr><td>Endpoint attestation</td><td>$150–500 / endpoint</td><td>Per-attestation report bundle</td></tr>
+      <tr><td>Automation / buildout</td><td>$75–150 / hr</td><td>Fleet integration, rule authoring, CI</td></tr>
+      <tr><td>Monthly retainer</td><td>$500–3,000 / mo</td><td>Ongoing fleet health, incident engagement</td></tr>
+    </table>
+    <p class="note">Accepted channels: Upwork, Contra, Toptal, X, GitHub, Dev.to/Medium, Reddit, Discord/Slack, cold email, MSP partnerships. LinkedIn: excluded.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div>© ZQM Computing / ZQM-Labs</div>
+  <div>Cert CN = Alex Zelenski · Contact: <a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></div>
+</footer>
+
+</body>
+</html>
