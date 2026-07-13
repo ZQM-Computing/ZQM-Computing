@@ -251,6 +251,31 @@
     body.lang-es .es { display: inline; }
     body.lang-es .es.block { display: block; }
     .en.block { display: block; }
+
+    /* Booking CTA (header, async option) */
+    .hdr-cta.book-cta { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+    .hdr-cta.book-cta:hover { background: var(--accent); color: #fff; }
+
+    /* Footer */
+    footer { background: var(--ink); color: #cfd2d8; padding: 40px 24px 28px; }
+    .foot-grid { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; }
+    .foot-brand { font-weight: 800; color: #fff; font-size: 15px; margin-bottom: 12px; }
+    .foot-brand span { color: var(--muted); font-weight: 400; }
+    .foot-cred { display: flex; flex-wrap: wrap; gap: 6px; }
+    .foot-cred span { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; border: 1px solid #34373f; color: #b9bdc6; border-radius: 4px; padding: 3px 7px; }
+    .foot-h { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 8px; }
+    .foot-towns { font-size: 13px; color: #b9bdc6; line-height: 1.6; max-width: 260px; }
+    footer a { color: #e7e9ee; text-decoration: none; }
+    footer a:hover { color: #fff; text-decoration: underline; }
+    .book { display: inline-block; margin-top: 4px; color: #fff; font-weight: 600; }
+    .foot-priv { max-width: var(--max); margin: 28px auto 0; padding-top: 16px; border-top: 1px solid #2b2e36; font-size: 12px; color: var(--muted); }
+    footer p { margin: 0 0 6px; font-size: 14px; }
+
+    @media (max-width: 620px) {
+      .nav { flex-wrap: wrap; gap: 8px; }
+      nav a { margin-left: 14px; font-size: 12px; }
+      .hdr-cta { padding: 7px 11px; font-size: 12px; }
+    }
   </style>
 <script type="application/ld+json">
 {
@@ -277,6 +302,7 @@
       <a class="en" href="index.html#faq">FAQ</a><a class="es" href="index.html#faq">Preguntas</a>
       <button id="langToggle" class="lang-toggle" aria-label="Switch language">ES</button>
     </nav>
+    <a class="hdr-cta book-cta" href="mailto:zqmcomputing@gmail.com?subject=Book%20a%20consultation">Book</a>
     <a class="hdr-cta" href="tel:+13862659994">Call (386) 265-9994</a>
   </div>
 </header>
@@ -445,10 +471,32 @@
 </main>
 
 <footer>
-  <div>© ZQM Computing / ZQM-Labs</div>
-  <div>Call/text: <a href="tel:+13862659994">(386) 265-9994</a></div>
-  <div>Contact: <a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></div>
-  <div style="width:100%;">Privacy: we collect nothing beyond what you send us by email. No trackers, no cookies.</div>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-brand">ZQM Computing <span>— Attestation &amp; Forensics</span></div>
+      <div class="foot-cred">
+        <span>Microsoft 365</span><span>Azure</span><span>AWS</span><span>CompTIA</span><span>HIPAA-ready</span>
+      </div>
+    </div>
+    <div>
+      <div class="foot-h">Serving</div>
+      <div class="foot-towns">New Smyrna Beach · Daytona Beach · Ormond Beach · Flagler Beach · Edgewater &amp; the Volusia / Flagler Atlantic coast, Florida</div>
+    </div>
+    <div>
+      <div class="foot-h">Contact</div>
+      <p>Call or text: <a href="tel:+13862659994">(386) 265-9994</a></p>
+      <p><a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></p>
+      <p><a class="book" href="mailto:zqmcomputing@gmail.com?subject=Book%20a%20consultation">Book a consultation →</a></p>
+    </div>
+    <div>
+      <div class="foot-h">Pages</div>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="services.html">Home &amp; Enterprise</a></p>
+      <p><a href="advanced.html">Advanced / R&amp;D</a></p>
+      <p><a href="index.html#faq">FAQ</a></p>
+    </div>
+  </div>
+  <div class="foot-priv">© ZQM Computing / ZQM-Labs — Privacy: we collect nothing beyond what you send us by email. No trackers, no cookies.</div>
 </footer>
 
 <script>
