@@ -10,6 +10,8 @@
   <meta property="og:description" content="Residential endpoint care and business-grade managed IT, security, FinOps, and AI — attestation-grade, local to Florida's Atlantic coast." />
   <meta property="og:image" content="og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://zqm-computing.github.io/ZQM-Computing/services.html" />
+  <meta property="og:url" content="https://zqm-computing.github.io/ZQM-Computing/services.html" />
   <title>ZQM Computing — Home & Enterprise IT Services</title>
   <style>
     :root {
@@ -271,6 +273,22 @@
     .foot-priv { max-width: var(--max); margin: 28px auto 0; padding-top: 16px; border-top: 1px solid #2b2e36; font-size: 12px; color: var(--muted); }
     footer p { margin: 0 0 6px; font-size: 14px; }
 
+    /* Lead form (no-JS, no tracker; posts to email via formsubmit.co) */
+    .lead-form { display: grid; gap: 12px; }
+    .lead-form label { font-size: 12px; font-weight: 600; color: var(--ink-2); display: block; margin-bottom: 4px; }
+    .lead-form input, .lead-form textarea, .lead-form select {
+      width: 100%; padding: 10px 12px; font-size: 14px; font-family: var(--font);
+      border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); color: var(--ink);
+    }
+    .lead-form input:focus, .lead-form textarea:focus, .lead-form select:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+    .lead-form textarea { min-height: 90px; resize: vertical; }
+    .lead-form button {
+      background: var(--accent); color: #fff; border: none; border-radius: 6px;
+      padding: 12px 18px; font-size: 14px; font-weight: 700; cursor: pointer;
+    }
+    .lead-form button:hover { background: var(--accent-ink); }
+    .form-hp { position: absolute; left: -9999px; }
+
     @media (max-width: 620px) {
       .nav { flex-wrap: wrap; gap: 8px; }
       nav a { margin-left: 14px; font-size: 12px; }
@@ -457,6 +475,8 @@
     <h2 class="es block">Claro y sin sorpresas.</h2>
     <p class="lead en">Flat per-endpoint or per-user, or project-based. No surprise hourly break-fix. Reach out — we'll pick up the phone.</p>
     <p class="lead es block">Precio fijo por equipo o por usuario, o por proyecto. Sin sorpresas de horas. Contáctenos — contestamos el teléfono.</p>
+    <p class="note en">Typical ranges: pre-flight endpoint check $150–500/endpoint · monthly retainer $500–3,000/mo · project work $75–150/hr. Full pricing table on the <a href="index.html#engage">main page</a>.</p>
+    <p class="note es block">Rangos típicos: revisión de equipo $150–500 · retención mensual $500–3,000/mes · proyectos $75–150/hr. Tabla completa en la <a href="index.html#engage">página principal</a>.</p>
     <div class="stack-grid">
       <div class="stack-cell">
         <h3>Service area</h3>
@@ -464,6 +484,42 @@
         <p>Call or text for Tier 1/2 escalation — local, no ticket tiers that loop you forever.</p>
         <p>Call or text: <a href="tel:+13862659994">(386) 265-9994</a></p>
         <p><a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></p>
+      </div>
+      <div class="stack-cell">
+        <h3 class="en">Request a callback</h3><h3 class="es block">Solicite una llamada</h3>
+        <form class="lead-form" action="https://formsubmit.co/zqmcomputing@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New lead from ZQM Computing site" />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" class="form-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div>
+            <label for="lf-name" class="en">Name</label><label for="lf-name" class="es block">Nombre</label>
+            <input id="lf-name" type="text" name="name" required />
+          </div>
+          <div>
+            <label for="lf-contact" class="en">Email or phone</label><label for="lf-contact" class="es block">Correo o teléfono</label>
+            <input id="lf-contact" type="text" name="email_or_phone" required />
+          </div>
+          <div>
+            <label for="lf-need" class="en">What do you need?</label><label for="lf-need" class="es block">¿Qué necesita?</label>
+            <select id="lf-need" name="service">
+              <option>Home / residential</option>
+              <option>Business / enterprise IT</option>
+              <option>Cybersecurity / PQC</option>
+              <option>Cloud cost control (FinOps)</option>
+              <option>Web services</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="lf-msg" class="en">Details (optional)</label><label for="lf-msg" class="es block">Detalles (opcional)</label>
+            <textarea id="lf-msg" name="message"></textarea>
+          </div>
+          <button type="submit" class="en">Send request →</button>
+          <button type="submit" class="es block">Enviar solicitud →</button>
+        </form>
+        <p class="note en">No trackers. Goes straight to our inbox.</p>
+        <p class="note es block">Sin rastreadores. Llega directo a nuestro correo.</p>
       </div>
     </div>
   </section>
