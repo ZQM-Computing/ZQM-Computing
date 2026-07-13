@@ -1,0 +1,6 @@
+# Build artifacts / local scratch
+gen_og.py
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
