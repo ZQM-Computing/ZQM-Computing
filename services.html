@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0c0f" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='system-ui'>⚡</text></svg>" />
+  <meta name="description" content="ZQM Computing — Home and Enterprise IT services for Florida: managed IT, preemptive cybersecurity, cloud cost control (FinOps), and AI consulting. New Smyrna Beach area." />
+  <meta property="og:title" content="ZQM Computing — Home & Enterprise IT Services" />
+  <meta property="og:description" content="Residential endpoint care and business-grade managed IT, security, FinOps, and AI — attestation-grade, local to Florida's Atlantic coast." />
+  <meta property="og:image" content="og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>ZQM Computing — Home & Enterprise IT Services</title>
+  <style>
+    :root {
+      --ink: #0b0c0f;
+      --ink-2: #1a1c22;
+      --ink-3: #2b2e36;
+      --muted: #8a8f9b;
+      --surface: #f6f5f3;
+      --paper: #ffffff;
+      --accent: #c9512c;
+      --accent-ink: #7a2e17;
+      --rule: #e0ded8;
+      --ok: #186a4b;
+      --warn: #a36a00;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --font-mono: "SF Mono", "Cascadia Code", ui-monospace, monospace;
+      --max: 860px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--surface);
+      color: var(--ink);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent-ink); }
+    a:hover { color: var(--accent); }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(246,245,243,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .wordmark {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      font-size: 16px;
+    }
+    .wordmark span { color: var(--muted); font-weight: 400; }
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-2);
+    }
+    nav a:hover { color: var(--accent); }
+
+    /* Layout */
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    section:last-child { border-bottom: none; }
+
+    /* Hero */
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: clamp(30px, 4.8vw, 50px);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      font-weight: 800;
+      margin: 0 0 18px;
+      max-width: 680px;
+    }
+    .lead {
+      font-size: 17px;
+      color: var(--ink-2);
+      max-width: 600px;
+      margin: 0 0 28px;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--ink);
+      color: var(--paper);
+      text-decoration: none;
+      padding: 11px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .cta:hover { background: var(--accent); color: #fff; }
+
+    /* Proof list */
+    h2 {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.015em;
+      margin: 0 0 16px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+    p { margin: 0 0 12px; }
+    ul { margin: 0; padding-left: 22px; }
+    li { margin-bottom: 8px; font-size: 15px; }
+
+    .proof {
+      display: grid;
+      gap: 14px;
+    }
+    .proof-item {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 18px 20px;
+    }
+    .proof-item .sig {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 8px;
+      word-break: break-word;
+    }
+    .status-dot {
+      display: inline-block;
+      width: 8px; height: 8px; border-radius: 50%;
+      margin-right: 6px;
+      background: var(--ok);
+    }
+    .status-dot.warn { background: var(--warn); }
+
+    /* Stack */
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .stack-cell {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .stack-cell h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); margin-bottom: 10px; }
+
+    /* Pricing */
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align: left; padding: 12px 8px; border-bottom: 1px solid var(--rule); }
+    th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
+    tr:last-child td, tr:last-child th { border-bottom: none; }
+    .note { font-size: 12px; color: var(--muted); margin-top: 8px; }
+
+    /* Header CTA (sticky) */
+    .hdr-cta {
+      margin-left: 18px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .hdr-cta:hover { background: var(--accent-ink); color: #fff; }
+
+    /* Metrics strip */
+    .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+    .metric {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 22px 18px;
+      text-align: center;
+    }
+    .metric-num { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; color: var(--accent); }
+    .metric-label { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+    /* Tier split */
+    .tier {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 22px;
+      margin-bottom: 16px;
+    }
+    .tier h2 { display: flex; align-items: center; gap: 10px; }
+    .pill {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--paper);
+      background: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+    }
+    .pill.alt { background: var(--ink-2); }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ZQM Computing",
+  "description": "Home and Enterprise IT services for Florida: managed IT, preemptive cybersecurity, cloud cost control (FinOps), and AI consulting.",
+  "areaServed": "Volusia County, Florida",
+  "email": "zqmcomputing@gmail.com",
+  "url": "https://zqm-computing.github.io/ZQM-Computing/services.html",
+  "image": "https://zqm-computing.github.io/ZQM-Computing/og-image.png"
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="wordmark">ZQM Computing <span>— Attestation &amp; Forensics</span></div>
+    <nav>
+      <a href="index.html">Main</a>
+      <a href="#home">Home</a>
+      <a href="#enterprise">Enterprise</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <a class="hdr-cta" href="tel:+13862659994">Call (386) 265-9994</a>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="eyebrow">Florida IT services · 2026</div>
+    <h1>Home &amp; Enterprise IT — one local operator, two playbooks.</h1>
+    <p class="lead">Whether it's your family's laptops or a 40-seat medical office, the goal is the same: locked, patched, provable, and ready before the next storm. Here's exactly what each tier covers.</p>
+    <a class="cta" href="mailto:zqmcomputing@gmail.com?subject=Services%20Inquiry">Let's talk →</a>
+  </section>
+
+  <section id="home">
+    <div class="tier">
+      <h2>Home &amp; Home-Office <span class="pill">Residential</span></h2>
+      <p>For households, remote workers, and solopreneurs who want their gear to just work — and survive hurricane season.</p>
+      <div class="stack-grid">
+        <div class="stack-cell">
+          <h3>Endpoint care</h3>
+          <ul>
+            <li>Patch automation and antivirus/EDR on every PC and Mac</li>
+            <li>Backup that's actually tested — not a checkbox</li>
+            <li>Slow-PC triage and cleanups</li>
+          </ul>
+        </div>
+        <div class="stack-cell">
+          <h3>Network &amp; Wi-Fi</h3>
+          <ul>
+            <li>Router/Wi-Fi hardening — no default-admin leftovers</li>
+            <li>Guest network setup; IoT isolation</li>
+            <li>Wired/wireless coverage fixes</li>
+          </ul>
+        </div>
+        <div class="stack-cell">
+          <h3>Storm prep</h3>
+          <ul>
+            <li>Pre-season backup + off-site copy check</li>
+            <li>Recovery dry-run so a flood isn't a data loss</li>
+            <li>Priority call/text when weather turns</li>
+          </ul>
+        </div>
+        <div class="stack-cell">
+          <h3>The family fleet</h3>
+          <ul>
+            <li>Phones, tablets, PCs — one point of contact</li>
+            <li>Password-manager and MFA setup</li>
+            <li>Plain-English "is this a scam?" triage</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="enterprise">
+    <div class="tier">
+      <h2>Enterprise &amp; Business <span class="pill alt">Business</span></h2>
+      <p>For clinics, property managers, marinas, and offices that need SLAs, compliance visibility, and signed proof — not vibes.</p>
+      <div class="stack-grid">
+        <div class="stack-cell">
+          <h3>Managed IT</h3>
+          <ul>
+            <li>Proactive endpoint monitoring, patch automation, and help desk</li>
+            <li>Per-user or per-endpoint plans with SLAs you can actually read</li>
+            <li>Backup, recovery, and disaster readiness — tested, not assumed</li>
+          </ul>
+        </div>
+        <div class="stack-cell">
+          <h3>Preemptive Cybersecurity</h3>
+          <ul>
+            <li>Shift from reactive to proactive — hunt threats before they land</li>
+            <li>MDR-style monitoring, MFA enforcement, identity (ITDR) coverage</li>
+            <li>Signed attestation you can hand your insurer or auditor</li>
+            <li>Post-quantum readiness: we track NIST PQC standards (FIPS 203/204/205) and advise clients holding long-lived records on crypto-agility timelines</li>
+          </ul>
+        </div>
+        <div class="stack-cell">
+          <h3>Cloud Cost Control (FinOps)</h3>
+          <ul>
+            <li>Waste audit across Microsoft 365, Azure, and AWS</li>
+            <li>Rightsizing and reserved/spot planning</li>
+            <li>SaaS license rationalization; hybrid identity cost review</li>
+          </ul>
+        </div>
+        <div class="stack-cell">
+          <h3>AI Consulting</h3>
+          <ul>
+            <li>Strategy-first AI tied to business value, not chatbots</li>
+            <li>On-prem LLM / agent deployment and RAG for internal ops</li>
+            <li>AI governance, risk alignment, and production rollout</li>
+          </ul>
+        </div>
+        <div class="stack-cell">
+          <h3>Compliance &amp; co-management</h3>
+          <ul>
+            <li>HIPAA / medical, property, and finance workflow visibility</li>
+            <li>Co-managed or fully outsourced — your call</li>
+            <li>Signed deliverables that satisfy auditors and insurers</li>
+          </ul>
+        </div>
+        <div class="stack-cell">
+          <h3>Local &amp; attestation-grade</h3>
+          <ul>
+            <li>New Smyrna Beach and the Volusia / Flagler coast</li>
+            <li>24/7 storm-season on-call</li>
+            <li>Detached CMS signatures tied to our certificate</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">How they compare</div>
+    <h2>Home vs Enterprise — quick map.</h2>
+    <table>
+      <tr><th>Need</th><th>Home</th><th>Enterprise</th></tr>
+      <tr><td>Patch &amp; backup</td><td>✓</td><td>✓ with SLA</td></tr>
+      <tr><td>Network hardening</td><td>✓</td><td>✓ + segmentation</td></tr>
+      <tr><td>Storm prep</td><td>✓</td><td>✓ priority on-call</td></tr>
+      <tr><td>MDR / threat hunting</td><td>—</td><td>✓</td></tr>
+      <tr><td>Compliance deliverables</td><td>—</td><td>✓</td></tr>
+      <tr><td>FinOps / cloud cost</td><td>—</td><td>✓</td></tr>
+      <tr><td>AI consulting</td><td>—</td><td>✓</td></tr>
+      <tr><td>Post-quantum readiness</td><td>advisory</td><td>advisory + roadmap</td></tr>
+    </table>
+    <p class="note">Not sure where you land? Most home-offices start on Home and graduate to Enterprise once compliance or scale demands it. One operator handles both.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">Engage</div>
+    <h2>Straightforward, no surprises.</h2>
+    <p class="lead">Flat per-endpoint or per-user, or project-based. No surprise hourly break-fix. Reach out — we'll pick up the phone.</p>
+    <div class="stack-grid">
+      <div class="stack-cell">
+        <h3>Service area</h3>
+        <p>New Smyrna Beach and the Volusia / Flagler Atlantic coast, Florida. On-site or remote.</p>
+        <p>Call or text for Tier 1/2 escalation — local, no ticket tiers that loop you forever.</p>
+        <p>Call or text: <a href="tel:+13862659994">(386) 265-9994</a></p>
+        <p><a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div>© ZQM Computing / ZQM-Labs</div>
+  <div>Call/text: <a href="tel:+13862659994">(386) 265-9994</a></div>
+  <div>Contact: <a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></div>
+  <div style="width:100%;">Privacy: we collect nothing beyond what you send us by email. No trackers, no cookies.</div>
+</footer>
+
+</body>
+</html>
