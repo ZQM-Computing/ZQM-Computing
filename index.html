@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b0c0f" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='system-ui'>⚡</text></svg>" />
-  <meta name="description" content="ZQM Computing — 2026 IT services for Florida businesses: managed IT, preemptive cybersecurity, cloud cost control (FinOps), and AI consulting. New Smyrna Beach area." />
+  <meta name="description" content="ZQM Computing — 2026 IT services for Florida businesses: managed IT, preemptive cybersecurity, cloud cost control (FinOps), web services, and AI consulting. New Smyrna Beach area." />
   <meta property="og:title" content="ZQM Computing — 2026 IT Services for Florida Businesses" />
-  <meta property="og:description" content="Managed IT, preemptive cybersecurity, cloud cost control, and AI consulting — attestation-grade, delivered local to Florida's Atlantic coast." />
+  <meta property="og:description" content="Managed IT, preemptive cybersecurity, cloud cost control, web services, and AI consulting — attestation-grade, delivered local to Florida's Atlantic coast." />
   <meta property="og:image" content="og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <title>ZQM Computing — 2026 IT Services: Managed, Secured, Cloud-Smart</title>
@@ -211,13 +211,32 @@
     }
     .metric-num { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; color: var(--accent); }
     .metric-label { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+    /* Language toggle (no trackers, pure CSS/JS, client-side) */
+    .lang-toggle {
+      margin-left: 12px;
+      background: transparent;
+      border: 1px solid var(--rule);
+      color: var(--ink-2);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .lang-toggle:hover { border-color: var(--accent); color: var(--accent); }
+    .es { display: none; }
+    body.lang-es .en { display: none; }
+    body.lang-es .es { display: inline; }
+    body.lang-es .es.block { display: block; }
+    .en.block { display: block; }
   </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "ZQM Computing",
-  "description": "2026 IT services for Florida businesses: managed IT, preemptive cybersecurity, cloud cost control (FinOps), and AI consulting.",
+  "description": "2026 IT services for Florida businesses: managed IT, preemptive cybersecurity, cloud cost control (FinOps), web services, and AI consulting.",
   "areaServed": "Volusia County, Florida",
   "email": "zqmcomputing@gmail.com",
   "url": "https://zqm-computing.github.io/ZQM-Computing/",
@@ -231,11 +250,12 @@
   <div class="nav">
     <div class="wordmark">ZQM Computing <span>— Attestation &amp; Forensics</span></div>
     <nav>
-      <a href="#services">Services</a>
-      <a href="services.html">Home &amp; Enterprise</a>
-      <a href="#stack">Stack</a>
-      <a href="#faq">FAQ</a>
-      <a href="#engage">Engage</a>
+      <a class="en" href="#services">Services</a><a class="es" href="#services">Servicios</a>
+      <a class="en" href="services.html">Home &amp; Enterprise</a><a class="es" href="services.html">Hogar y Empresa</a>
+      <a class="en" href="#stack">Stack</a><a class="es" href="#stack">Stack</a>
+      <a class="en" href="#faq">FAQ</a><a class="es" href="#faq">Preguntas</a>
+      <a class="en" href="#engage">Engage</a><a class="es" href="#engage">Contacto</a>
+      <button id="langToggle" class="lang-toggle" aria-label="Switch language">ES</button>
     </nav>
     <a class="hdr-cta" href="tel:+13862659994">Call (386) 265-9994</a>
   </div>
@@ -245,9 +265,12 @@
 
   <section>
     <div class="eyebrow">Florida IT services · 2026</div>
-    <h1>Managed IT, secured and cloud-smart — for Florida businesses, ready before storm season.</h1>
-    <p class="lead">We bundle the four services Florida SMBs actually need in 2026: managed endpoint support, preemptive cybersecurity, cloud cost control (FinOps), and AI consulting — delivered local and attestation-grade.</p>
-    <a class="cta" href="mailto:zqmcomputing@gmail.com?subject=Fleet%20Attestation%20Engagement">Let's talk →</a>
+    <h1 class="en">Managed IT, secured and cloud-smart — for Florida businesses, ready before storm season.</h1>
+    <h1 class="es block">TI gestionada y protegida — para negocios de Florida, lista antes de la temporada de tormentas.</h1>
+    <p class="lead en">We bundle the services Florida SMBs actually need in 2026: managed endpoint support, preemptive cybersecurity, cloud cost control (FinOps), web services, and AI consulting — delivered local and attestation-grade.</p>
+    <p class="lead es block">Ofrecemos lo que las pymes de Florida necesitan en 2026: soporte gestionado, ciberseguridad preventiva, control de costos en la nube (FinOps), servicios web y consultoría de IA — local y con grado de attestation.</p>
+    <a class="cta en" href="mailto:zqmcomputing@gmail.com?subject=Fleet%20Attestation%20Engagement">Let's talk →</a>
+    <a class="cta es block" href="mailto:zqmcomputing@gmail.com?subject=Fleet%20Attestation%20Engagement">Hablemos →</a>
   </section>
 
   <section id="metrics" class="metrics">
@@ -360,6 +383,7 @@
           <li>zbit benchmark automation on mesh hardware</li>
           <li>Doubly-linked intelligence mesh: NATS + Yggdrasil + CoreDNS LAN backup</li>
         </ul>
+        <p class="note"><a href="advanced.html">Advanced Computing &amp; R&amp;D — see the offshoot page →</a></p>
       </div>
       <div class="stack-cell">
         <h3>Placement policy</h3>
@@ -371,6 +395,74 @@
         </ul>
       </div>
     </div>
+  </section>
+
+  <!-- Web Services: new 2026 component (5th capability, distinct from the 4-pillar claim) -->
+  <section id="web">
+    <div class="eyebrow">Also available — Web Services</div>
+    <h2>Web presence, hosted and hardened — for operators who'd rather not babysit it.</h2>
+    <p>From a brochure site that actually loads to a hardened web app behind your firewall, web services round out the stack. Built attestation-grade, like everything else.</p>
+    <div class="stack-grid">
+      <div class="stack-cell">
+        <h3>Web design &amp; build</h3>
+        <ul>
+          <li>Static, fast, mobile-first sites — no bloated page builders</li>
+          <li>Accessibility (WCAG) and Core Web Vitals baked in</li>
+          <li>Content you can update without calling us</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Hosting &amp; DNS</h3>
+        <ul>
+          <li>Low-cost static hosting with TLS by default</li>
+          <li>DNS hygiene, DNSSEC where supported, no mystery records</li>
+          <li>Backup and rollback you can verify</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Hardening &amp; attestation</h3>
+        <ul>
+          <li>Headers, CSP, and TLS configuration reviewed</li>
+          <li>Signed deploy manifests — prove what shipped</li>
+          <li>Plain report you can hand your insurer or auditor</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Web apps &amp; integration</h3>
+        <ul>
+          <li>Small internal tools and forms, on-prem or cloud</li>
+          <li>AI/RAG front-ends wired to your own data</li>
+          <li>Integration with M365 / line-of-business systems</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Want the full managed-IT and security picture? See <a href="services.html">Home &amp; Enterprise services</a>.</p>
+  </section>
+
+  <!-- Legal & Finance PQC landing: wires U9 (referenced, unlanded) into the core -->
+  <section id="legal">
+    <div class="eyebrow">For legal &amp; finance</div>
+    <h2>Long-lived records? Plan for the crypto you'll need in 2035.</h2>
+    <p>Law firms, title companies, and financial offices hold records that must stay confidential for decades. "Harvest now, decrypt later" is a live risk for that data — and a reason to think about post-quantum readiness now, not after a breach.</p>
+    <div class="stack-grid">
+      <div class="stack-cell">
+        <h3>PQC readiness review</h3>
+        <ul>
+          <li>Map which records are long-lived and exposed on the quantum clock</li>
+          <li>Align timelines to NIST FIPS 203/204/205</li>
+          <li>Advisory only — we don't sell you a product</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Attestation-grade handling</h3>
+        <ul>
+          <li>Signed, verifiable deliverables for your files and chain of custody</li>
+          <li>CMS-provenance you can re-check years later</li>
+          <li>Works alongside your existing compliance posture</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">See also the <a href="advanced.html">Advanced Computing &amp; R&amp;D</a> offshoot for deeper PQC and provenance work.</p>
   </section>
 
   <section id="ops">
@@ -481,7 +573,7 @@
 
     <div class="stack-grid" style="margin-top:36px;">
       <div class="stack-cell">
-        <h3>Service area</h3>
+        <h3 class="en">Service area</h3><h3 class="es block">Área de servicio</h3>
         <p>New Smyrna Beach and the Volusia / Flagler Atlantic coast, Florida. On-site or remote.</p>
         <p>Call or text for Tier 1/2 escalation — local, no ticket tiers that loop you forever.</p>
         <p>Call or text: <a href="tel:+13862659994">(386) 265-9994</a></p>
@@ -498,6 +590,15 @@
   <div>Contact: <a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></div>
   <div style="width:100%;">Privacy: we collect nothing beyond what you send us by email. No trackers, no cookies.</div>
 </footer>
+
+<script>
+  var t = document.getElementById('langToggle');
+  t.onclick = function () {
+    var es = document.body.classList.toggle('lang-es');
+    document.documentElement.lang = es ? 'es' : 'en';
+    t.textContent = es ? 'EN' : 'ES';
+  };
+</script>
 
 </body>
 </html>

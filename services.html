@@ -232,6 +232,25 @@
       padding: 3px 10px;
     }
     .pill.alt { background: var(--ink-2); }
+
+    /* Language toggle (no trackers, pure client-side) */
+    .lang-toggle {
+      margin-left: 12px;
+      background: transparent;
+      border: 1px solid var(--rule);
+      color: var(--ink-2);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .lang-toggle:hover { border-color: var(--accent); color: var(--accent); }
+    .es { display: none; }
+    body.lang-es .en { display: none; }
+    body.lang-es .es { display: inline; }
+    body.lang-es .es.block { display: block; }
+    .en.block { display: block; }
   </style>
 <script type="application/ld+json">
 {
@@ -252,10 +271,11 @@
   <div class="nav">
     <div class="wordmark">ZQM Computing <span>— Attestation &amp; Forensics</span></div>
     <nav>
-      <a href="index.html">Main</a>
-      <a href="#home">Home</a>
-      <a href="#enterprise">Enterprise</a>
-      <a href="index.html#faq">FAQ</a>
+      <a class="en" href="index.html">Main</a><a class="es" href="index.html">Inicio</a>
+      <a class="en" href="#home">Home</a><a class="es" href="#home">Hogar</a>
+      <a class="en" href="#enterprise">Enterprise</a><a class="es" href="#enterprise">Empresa</a>
+      <a class="en" href="index.html#faq">FAQ</a><a class="es" href="index.html#faq">Preguntas</a>
+      <button id="langToggle" class="lang-toggle" aria-label="Switch language">ES</button>
     </nav>
     <a class="hdr-cta" href="tel:+13862659994">Call (386) 265-9994</a>
   </div>
@@ -266,8 +286,10 @@
   <section>
     <div class="eyebrow">Florida IT services · 2026</div>
     <h1>Home &amp; Enterprise IT — one local operator, two playbooks.</h1>
-    <p class="lead">Whether it's your family's laptops or a 40-seat medical office, the goal is the same: locked, patched, provable, and ready before the next storm. Here's exactly what each tier covers.</p>
-    <a class="cta" href="mailto:zqmcomputing@gmail.com?subject=Services%20Inquiry">Let's talk →</a>
+    <p class="lead en">Whether it's your family's laptops or a 40-seat medical office, the goal is the same: locked, patched, provable, and ready before the next storm. Here's exactly what each tier covers.</p>
+    <p class="lead es block">Ya sean las laptops de su familia o un consultorio médico de 40 puestos, el objetivo es el mismo: protegido, parcheado, demostrable y listo antes de la próxima tormenta. Aquí está exactamente lo que cubre cada nivel.</p>
+    <a class="cta en" href="mailto:zqmcomputing@gmail.com?subject=Services%20Inquiry">Let's talk →</a>
+    <a class="cta es block" href="mailto:zqmcomputing@gmail.com?subject=Services%20Inquiry">Hablemos →</a>
   </section>
 
   <section id="home">
@@ -365,7 +387,24 @@
             <li>Detached CMS signatures tied to our certificate</li>
           </ul>
         </div>
+        <div class="stack-cell">
+          <h3>Web Services</h3>
+          <ul>
+            <li>Static, fast, accessible sites — no bloated page builders</li>
+            <li>Hosting, DNS hygiene, TLS by default, rollback</li>
+            <li>Hardening + signed deploy manifests; small web apps &amp; AI/RAG front-ends</li>
+          </ul>
+        </div>
+        <div class="stack-cell">
+          <h3>Legal &amp; finance PQC</h3>
+          <ul>
+            <li>For offices holding long-lived records (decades of confidentiality)</li>
+            <li>Map "harvest now, decrypt later" exposure; align to NIST FIPS 203/204/205</li>
+            <li>Advisory only — attestation-grade, no product to sell</li>
+          </ul>
+        </div>
       </div>
+      <p class="note">For deeper provenance and post-quantum work, see <a href="advanced.html">Advanced Computing &amp; R&amp;D</a>.</p>
     </div>
   </section>
 
@@ -388,8 +427,10 @@
 
   <section>
     <div class="eyebrow">Engage</div>
-    <h2>Straightforward, no surprises.</h2>
-    <p class="lead">Flat per-endpoint or per-user, or project-based. No surprise hourly break-fix. Reach out — we'll pick up the phone.</p>
+    <h2 class="en">Straightforward, no surprises.</h2>
+    <h2 class="es block">Claro y sin sorpresas.</h2>
+    <p class="lead en">Flat per-endpoint or per-user, or project-based. No surprise hourly break-fix. Reach out — we'll pick up the phone.</p>
+    <p class="lead es block">Precio fijo por equipo o por usuario, o por proyecto. Sin sorpresas de horas. Contáctenos — contestamos el teléfono.</p>
     <div class="stack-grid">
       <div class="stack-cell">
         <h3>Service area</h3>
@@ -409,6 +450,15 @@
   <div>Contact: <a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></div>
   <div style="width:100%;">Privacy: we collect nothing beyond what you send us by email. No trackers, no cookies.</div>
 </footer>
+
+<script>
+  var t = document.getElementById('langToggle');
+  t.onclick = function () {
+    var es = document.body.classList.toggle('lang-es');
+    document.documentElement.lang = es ? 'es' : 'en';
+    t.textContent = es ? 'EN' : 'ES';
+  };
+</script>
 
 </body>
 </html>
