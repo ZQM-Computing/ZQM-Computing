@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0c0f" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='system-ui'>⚡</text></svg>" />
+  <meta name="description" content="ZQM Computing — Servicios de TI 2026 para negocios de Florida: TI gestionada, ciberseguridad preventiva, control de costos en la nube (FinOps), servicios web y consultoría de IA. Área de New Smyrna Beach." />
+  <meta property="og:title" content="ZQM Computing — Servicios de TI 2026 para negocios de Florida" />
+  <meta property="og:description" content="TI gestionada, ciberseguridad preventiva, control de costos en la nube, servicios web y consultoría de IA — con grado de attestation, entregado localmente en la costa atlántica de Florida." />
+  <meta property="og:image" content="og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://zqm-computing.github.io/ZQM-Computing/index-es.html" />
+  <meta property="og:url" content="https://zqm-computing.github.io/ZQM-Computing/index-es.html" />
+  <title>ZQM Computing — Servicios de TI 2026: gestionados, seguros y optimizados para la nube</title>
+  <style>
+    :root {
+      --ink: #0b0c0f;
+      --ink-2: #1a1c22;
+      --ink-3: #2b2e36;
+      --muted: #8a8f9b;
+      --surface: #f6f5f3;
+      --paper: #ffffff;
+      --accent: #c9512c;
+      --accent-ink: #7a2e17;
+      --rule: #e0ded8;
+      --ok: #186a4b;
+      --warn: #a36a00;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --font-mono: "SF Mono", "Cascadia Code", ui-monospace, monospace;
+      --max: 860px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--surface);
+      color: var(--ink);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent-ink); }
+    a:hover { color: var(--accent); }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(246,245,243,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .wordmark {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      font-size: 16px;
+    }
+    .wordmark span { color: var(--muted); font-weight: 400; }
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-2);
+    }
+    nav a:hover { color: var(--accent); }
+
+    /* Layout */
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    section:last-child { border-bottom: none; }
+
+    /* Hero */
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: clamp(30px, 4.8vw, 50px);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      font-weight: 800;
+      margin: 0 0 18px;
+      max-width: 680px;
+    }
+    .lead {
+      font-size: 17px;
+      color: var(--ink-2);
+      max-width: 600px;
+      margin: 0 0 28px;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--ink);
+      color: var(--paper);
+      text-decoration: none;
+      padding: 11px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .cta:hover { background: var(--accent); color: #fff; }
+
+    /* Proof list */
+    h2 {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.015em;
+      margin: 0 0 16px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+    p { margin: 0 0 12px; }
+    ul { margin: 0; padding-left: 22px; }
+    li { margin-bottom: 8px; font-size: 15px; }
+
+    .proof {
+      display: grid;
+      gap: 14px;
+    }
+    .proof-item {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 18px 20px;
+    }
+    .proof-item .sig {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 8px;
+      word-break: break-word;
+    }
+    .status-dot {
+      display: inline-block;
+      width: 8px; height: 8px; border-radius: 50%;
+      margin-right: 6px;
+      background: var(--ok);
+    }
+    .status-dot.warn { background: var(--warn); }
+
+    /* Stack */
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .stack-cell {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .stack-cell h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); margin-bottom: 10px; }
+
+    /* Pricing */
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align: left; padding: 12px 8px; border-bottom: 1px solid var(--rule); }
+    th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
+    tr:last-child td, tr:last-child th { border-bottom: none; }
+    .note { font-size: 12px; color: var(--muted); margin-top: 8px; }
+
+    /* Header CTA (sticky) */
+    .hdr-cta {
+      margin-left: 18px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .hdr-cta:hover { background: var(--accent-ink); color: #fff; }
+
+    /* Metrics strip */
+    .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+    .metric {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 22px 18px;
+      text-align: center;
+    }
+    .metric-num { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; color: var(--accent); }
+    .metric-label { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+    /* Footer */
+    footer { background: var(--ink); color: #cfd2d8; padding: 40px 24px 28px; }
+    .foot-grid { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; }
+    .foot-brand { font-weight: 800; color: #fff; font-size: 15px; margin-bottom: 12px; }
+    .foot-brand span { color: var(--muted); font-weight: 400; }
+    .foot-cred { display: flex; flex-wrap: wrap; gap: 6px; }
+    .foot-cred span { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; border: 1px solid #34373f; color: #b9bdc6; border-radius: 4px; padding: 3px 7px; }
+    .foot-h { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 8px; }
+    .foot-towns { font-size: 13px; color: #b9bdc6; line-height: 1.6; max-width: 260px; }
+    footer a { color: #e7e9ee; text-decoration: none; }
+    footer a:hover { color: #fff; text-decoration: underline; }
+    .book { display: inline-block; margin-top: 4px; color: #fff; font-weight: 600; }
+    .foot-priv { max-width: var(--max); margin: 28px auto 0; padding-top: 16px; border-top: 1px solid #2b2e36; font-size: 12px; color: var(--muted); }
+    footer p { margin: 0 0 6px; font-size: 14px; }
+
+    /* Lead form (no-JS, no tracker; posts to email via formsubmit.co) */
+    .lead-form { display: grid; gap: 12px; }
+    .lead-form label { font-size: 12px; font-weight: 600; color: var(--ink-2); display: block; margin-bottom: 4px; }
+    .lead-form input, .lead-form textarea, .lead-form select {
+      width: 100%; padding: 10px 12px; font-size: 14px; font-family: var(--font);
+      border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); color: var(--ink);
+    }
+    .lead-form input:focus, .lead-form textarea:focus, .lead-form select:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+    .lead-form textarea { min-height: 90px; resize: vertical; }
+    .lead-form button {
+      background: var(--accent); color: #fff; border: none; border-radius: 6px;
+      padding: 12px 18px; font-size: 14px; font-weight: 700; cursor: pointer;
+    }
+    .lead-form button:hover { background: var(--accent-ink); }
+    .form-hp { position: absolute; left: -9999px; }
+
+    @media (max-width: 620px) {
+      .nav { flex-wrap: wrap; gap: 8px; }
+      nav a { margin-left: 14px; font-size: 12px; }
+      .hdr-cta { padding: 7px 11px; font-size: 12px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ZQM Computing",
+    "description": "Servicios de TI 2026 para negocios de Florida: TI gestionada, ciberseguridad preventiva, control de costos en la nube (FinOps), servicios web y consultoría de IA.",
+    "areaServed": "Volusia County, Florida",
+    "email": "zqmcomputing@gmail.com",
+    "url": "https://zqm-computing.github.io/ZQM-Computing/",
+    "image": "https://zqm-computing.github.io/ZQM-Computing/og-image.png"
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="wordmark">ZQM Computing <span>— Attestation &amp; Forensics</span></div>
+    <nav>
+      <a href="https://zqm-computing.github.io/ZQM-Computing/#services">Servicios</a>
+      <a href="services.html">Hogar y Empresa</a>
+      <a href="https://zqm-computing.github.io/ZQM-Computing/#stack">Stack</a>
+      <a href="https://zqm-computing.github.io/ZQM-Computing/#faq">Preguntas</a>
+      <a href="https://zqm-computing.github.io/ZQM-Computing/#engage">Contacto</a>
+      <a class="hdr-cta book-cta" href="mailto:zqmcomputing@gmail.com?subject=Book%20a%20consultation">Reservar</a>
+      <a class="hdr-cta" href="tel:+138****9994">Llamar (386) 265-9994</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="eyebrow">Servicios de TI en Florida · 2026</div>
+    <h1>TI gestionada, segura y optimizada para la nube — para negocios de Florida, lista antes de la temporada de tormentas.</h1>
+    <p class="lead">Ofrecemos lo que las pymes de Florida necesitan en 2026: soporte gestionado, ciberseguridad preventiva, control de costos en la nube (FinOps), servicios web y consultoría de IA — local y con grado de attestation.</p>
+    <a class="cta" href="mailto:zqmcomputing@gmail.com?subject=Fleet%20Attestation%20Engagement">Hablemos →</a>
+  </section>
+
+  <section id="metrics" class="metrics">
+    <div class="metrics-grid">
+      <div class="metric"><div class="metric-num">24/7</div><div class="metric-label">guardia en temporada de tormentas</div></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="eyebrow">Qué entregamos en 2026</div>
+    <h2>Cuatro servicios que las pymes de Florida necesitan — integrados, locales, con grado de attestation.</h2>
+    <p>Un solo operador cubre el stack que marca la investigación este año: TI gestionada, seguridad preventiva, control de costos en la nube e IA que se paga sola.</p>
+    <div class="stack-grid">
+      <div class="stack-cell">
+        <h3>TI gestionada</h3>
+        <ul>
+          <li>Monitoreo proactivo de endpoints, automatización de parches y mesa de ayuda</li>
+          <li>Planes por usuario o por endpoint con SLAs que realmente puedes leer</li>
+          <li>Respaldos, recuperación y preparación ante desastres — probados, no asumidos</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Ciberseguridad preventiva</h3>
+        <ul>
+          <li>Pasa de reactivo a proactivo — caza amenazas antes de que aterricen</li>
+          <li>Monitoreo tipo MDR, aplicación de MFA, cobertura de identidad (ITDR)</li>
+          <li>Attestation firmada que puedes entregar a tu aseguradora o auditor</li>
+          <li>Preparación post-cuántica: seguimos NIST PQC (FIPS 203/204/205) y asesoramos a registros de larga duración</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Control de costos en la nube (FinOps)</h3>
+        <ul>
+          <li>Auditoría de desperdicio en Microsoft 365, Azure y AWS</li>
+          <li>Ajuste de tamaño y planeación reservada/spot — ~30% del gasto en la nube se desperdicia</li>
+          <li>Racionalización de licencias SaaS; revisión de costos de identidad híbrida</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Consultoría de IA</h3>
+        <ul>
+          <li>IA primero estrategia, ligada al valor del negocio, no chatbots</li>
+          <li>Despliegue de LLM/agentes on-prem y RAG para operaciones internas</li>
+          <li>Gobernanza de IA, alineación de riesgo y despliegue en producción</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof">
+    <div class="eyebrow">Lo que tu técnico puede verificar</div>
+    <h2>Verificaciones reales, archivos reales — no un tablero lleno de luces verdes.</h2>
+    <p>Cada proyecto termina con algo que puedes entregar a tu aseguradora, tu MSP o tu propio técnico para verificarlo en cinco minutos — sin software especial, sin cuentas, sin suscripciones.</p>
+    <div class="proof">
+      <div class="proof-item">
+        <div><span class="status-dot"></span><strong>Cifrado de disco realmente activo</strong></div>
+        <div>Estado de BitLocker extraído en vivo de cada endpoint — no una casilla del trimestre pasado. Confirmamos enlace TPM, custodia de claves de recuperación y versión del cifrador para que un reinicio proteja los datos.</div>
+        <div class="sig">urn:zqm:attestation:tpm-bitlocker</div>
+      </div>
+      <div class="proof-item">
+        <div><span class="status-dot"></span><strong>Lista de controladores que pasa una auditoría</strong></div>
+        <div>Inventario completo de controladores de kernel verificado contra el catálogo de Microsoft. Los controladores desconocidos o sin firma se marcan por nombre y ruta — nada oculto bajo "hardware misceláneo".</div>
+        <div class="sig">urn:zqm:attestation:driver-audit</div>
+      </div>
+      <div class="proof-item">
+        <div><span class="status-dot"></span><strong>Entregables firmados, no promesas</strong></div>
+        <div>Cada informe y paquete incluye una firma CMS desligada ligada a nuestro certificado. Verifícalo sin llamarnos, incluso años después.</div>
+        <div class="sig">urn:zqm:attestation:signature-provenance</div>
+      </div>
+      <div class="proof-item">
+        <div><span class="status-dot warn"></span><strong>Cadena de archivos que se verifica a sí misma</strong></div>
+        <div>Un manifiesto SHA-256 continuo vincula cada prueba a una raíz sellada. Hacemos la verificación antes de entregar; puedes repetirla cuando quieras.</div>
+        <div class="sig">urn:zqm:attestation:chain-integrity</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="eyebrow">Qué construimos y evaluamos</div>
+    <h2>Hecho para pymes de Florida — herramientas listas para huracanes en endpoints cotidianos.</h2>
+    <p>ZQM Computing opera en todo el stack de endpoints para operadores costeros: recepciones de hoteles, oficinas de administración de propiedades, clínicas médicas y marinas que necesitan PCs que sobrevivan la temporada de tormentas — física y digitalmente.</p>
+    <div class="stack-grid">
+      <div class="stack-cell">
+        <h3>Consultoría de software</h3>
+        <ul>
+          <li>Automatización de flota Windows — Fleet + osquery, reglas Sigma ajustadas</li>
+          <li>Herramientas de auditoría de controladores y kernel</li>
+          <li>PowerShell / Python para chequeos de salud recurrentes</li>
+          <li>Firma de código, attestation CMS, flujos de procedencia</li>
+          <li>CI/CD con Woodpecker; secretos respaldados por Vault</li>
+          <li>Consultas de integración de IA — despliegue de LLM/agentes on-prem, RAG para operaciones internas</li>
+          <li>Control de costos en la nube (FinOps) en Microsoft 365, Azure y AWS</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Consultoría de hardware</h3>
+        <ul>
+          <li>Adquisición de estaciones y servidores — equipos reforzados para huracanes</li>
+          <li>Inventario BMC (iDRAC, Redfish) y revisión de rotación TLS</li>
+          <li>Auditoría de driver-store Dell NVMe; SMART donde sea legible</li>
+          <li>Mapeo de dispositivos LAN en ubicaciones multi-sitio</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Computación avanzada</h3>
+        <ul>
+          <li>Procedencia de ADN toroidal — cadenas a prueba de fragmentación con SHA-256 continuo</li>
+          <li>Simulación cuántica y evaluaciones de preparación PQC</li>
+          <li>Automatización de benchmarks zbit en hardware mesh</li>
+          <li>Malla de inteligencia doblemente enlazada: NATS + Yggdrasil + respaldo LAN CoreDNS</li>
+        </ul>
+        <p class="note"><a href="advanced.html">Computación avanzada e I+D — página especializada →</a></p>
+      </div>
+      <div class="stack-cell">
+        <h3>Política de colocación</h3>
+        <ul>
+          <li>Superficie de endpoints primero Windows</li>
+          <li>No vendemos Velociraptor / Wazuh / Elastic como producto</li>
+          <li>Licencias FOSS de origen preservadas</li>
+          <li>Tú posees la metodología y la evidencia — sin enclaustramiento</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="web">
+    <div class="eyebrow">También disponible — Servicios web</div>
+    <h2>Presencia web, alojada y reforzada — para operadores que prefieren no vigilarla.</h2>
+    <p>Desde un sitio folleto que realmente carga hasta una app web reforzada tras tu firewall, los servicios web completan el stack. Con grado de attestation, como todo lo demás.</p>
+    <div class="stack-grid">
+      <div class="stack-cell">
+        <h3>Diseño y construcción web</h3>
+        <ul>
+          <li>Sitios estáticos, rápidos, mobile-first — sin constructores pesados</li>
+          <li>Accesibilidad (WCAG) y Core Web Vitals integrados</li>
+          <li>Contenido que puedes actualizar sin llamarnos</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Alojamiento y DNS</h3>
+        <ul>
+          <li>Alojamiento estático de bajo costo con TLS por defecto</li>
+          <li>Higiene DNS, DNSSEC donde haya soporte, sin registros misteriosos</li>
+          <li>Respaldo y reversión que puedes verificar</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Refuerzo y attestation</h3>
+        <ul>
+          <li>Cabeceras, CSP y configuración TLS revisadas</li>
+          <li>Manifiestos de despliegue firmados — prueba lo que se publicó</li>
+          <li>Informe claro que puedes entregar a tu aseguradora o auditor</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Apps web e integración</h3>
+        <ul>
+          <li>Pequeñas herramientas y formularios internos, on-prem o en la nube</li>
+          <li>Front-ends de IA/RAG conectados a tus propios datos</li>
+          <li>Integración con M365 / sistemas de línea de negocio</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">¿Quieres ver el panorama completo? Consulta <a href="services.html">Servicios de TI gestionada</a>.</p>
+  </section>
+
+  <section id="legal">
+    <div class="eyebrow">Para legal y finanzas</div>
+    <h2>¿Registros de larga duración? Planea la criptografía que necesitarás en 2035.</h2>
+    <p>Bufetes, empresas de títulos y oficinas financieras guardan registros que deben permanecer confidenciales por décadas. "Cosecha ahora, descifra después" es un riesgo real — y una razón para pensar en preparación post-cuántica ahora, no tras una brecha.</p>
+    <div class="stack-grid">
+      <div class="stack-cell">
+        <h3>Evaluación de preparación PQC</h3>
+        <ul>
+          <li>Mapea qué registros son de larga duración y están expuestos en el reloj cuántico</li>
+          <li>Alinea plazos con NIST FIPS 203/204/205</li>
+          <li>Solo asesoría — no te vendemos un producto</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Manejo con grado de attestation</h3>
+        <ul>
+          <li>Entregables firmados y verificables para tus archivos y cadena de custodia</li>
+          <li>Procedencia CMS que puedes reverificar años después</li>
+          <li>Funciona junto a tu postura de cumplimiento actual</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Consulta también la página <a href="advanced.html">Computación avanzada e I+D</a> para trabajo profundo en PQC y procedencia.</p>
+  </section>
+
+  <section id="ops">
+    <div class="eyebrow">Cómo operamos</div>
+    <h2>De la preparación para huracanes al soporte diario — local, cercano y real.</h2>
+    <p>Sin centros de llamadas en el extranjero, sin niveles de tickets que te repiten para siempre. Un operador que conoce Windows a fondo y trata tu flota como suya.</p>
+    <div class="stack-grid">
+      <div class="stack-cell">
+        <h3>Consignación de tecnología</h3>
+        <ul>
+          <li>Recolección, inspección y preparación de hardware bajo custodia attestada</li>
+          <li>Auditoría de preparación pre-tormenta — BitLocker, respaldos y nivel de parches</li>
+          <li>Reimagen y huella antes del despliegue</li>
+          <li>Registros de disposición y sanización de datos a pedido</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Soporte de software</h3>
+        <ul>
+          <li>Operaciones continuas de Fleet + osquery — ajustamos o transferimos, tú decides</li>
+          <li>Reglas Sigma adaptadas a flujos de hotelería, médicos y propiedad</li>
+          <li>Despliegues de publicadores con validación por etapas antes de reiniciar</li>
+          <li>Re-firma CMS cuando los paquetes entregables se actualizan</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Nube y control de costos</h3>
+        <ul>
+          <li>Auditoría de desperdicio en la nube — recursos ociosos y sobredimensionados</li>
+          <li>Ajuste de tamaño y planeación reservada/spot en Microsoft 365, Azure y AWS</li>
+          <li>Racionalización de licencias SaaS — corta suscripciones duplicadas o sin uso</li>
+          <li>Revisión de costos de identidad y acceso híbridos</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Soporte técnico</h3>
+        <ul>
+          <li>Persona real, respuesta real — llama o escribe para escalamiento Tier 1/2</li>
+          <li>Reversión de driver-store y validación de parches tras el caos de Storm / Windows Update</li>
+          <li>Endpoints que no arrancan o descifran — recuperación TPM/BitLocker en sitio o remoto</li>
+          <li>Attestation de emergencia post-incidente cuando las cosas se tuercen</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Pruebas de parches</h3>
+        <ul>
+          <li>Instalamos primero las grandes actualizaciones de Windows/software en tu equipo</li>
+          <li>Si algo falla, lo descubres en nuestro horario — no en tu fin de semana más ocupado</li>
+          <li>Informe simple de aprobado/fallido que puedes entregar a quien gestiona tu IT</li>
+        </ul>
+      </div>
+      <div class="stack-cell">
+        <h3>Disposición segura</h3>
+        <ul>
+          <li>Hardware dañado por tormenta o retirado borrado según especificación</li>
+          <li>Certificado de disposición firmado que puedes mostrar a aseguradoras o auditores</li>
+          <li>Cubre datos de huéspedes, de tarjetahabientes y registros médicos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="eyebrow">Antes de escribirnos</div>
+    <h2>Preguntas frecuentes de operadores de Florida.</h2>
+    <div class="stack-grid">
+      <div class="stack-cell">
+        <h3>¿Dónde trabajas?</h3>
+        <p>New Smyrna Beach y la costa atlántica de Volusia / Flagler. Operador local, sin centro de llamadas en el extranjero.</p>
+      </div>
+      <div class="stack-cell">
+        <h3>¿Reemplazas a nuestro MSP o trabajas junto a él?</h3>
+        <p>Cualquiera. Co-gestionado o tercerizado por completo — tú decides. Ajustamos o transferimos.</p>
+      </div>
+      <div class="stack-cell">
+        <h3>¿Cuál es tu tiempo de respuesta?</h3>
+        <p>Llama o escribe para escalamiento Tier 1/2. Attestation de emergencia post-incidente cuando las cosas se tuercen.</p>
+      </div>
+      <div class="stack-cell">
+        <h3>¿Manejas cumplimiento (HIPAA, etc.)?</h3>
+        <p>Operacionalizamos la visibilidad de cumplimiento y entregamos entregables firmados para flujos médicos, de propiedad y financieros.</p>
+      </div>
+      <div class="stack-cell">
+        <h3>¿Cómo se estructura el precio?</h3>
+        <p>Fijo por endpoint o por usuario, o por proyecto. Sin reparaciones por hora sorpresa. Ver la tabla abajo.</p>
+      </div>
+      <div class="stack-cell">
+        <h3>¿Estamos enclaustrados?</h3>
+        <p>No. Tú posees la metodología y la evidencia. Las licencias FOSS de origen se preservan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="engage">
+    <div class="eyebrow">Comercial</div>
+    <h2>Precios claros para negocios de Florida</h2>
+    <p>Precios locales para operadores locales. Contacta directamente en <a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a>.</p>
+    <table>
+      <tr><th>Tipo</th><th>Rango</th><th>Notas</th></tr>
+      <tr><td>Revisión de endpoint pre-vuelo</td><td>$150–500 / endpoint</td><td>Paquete de informe por attestation</td></tr>
+      <tr><td>Automatización / construcción</td><td>$75–150 / hr</td><td>Configuración de flota, reglas, CI</td></tr>
+      <tr><td>Pruebas de parches</td><td>$150–400 / ronda</td><td>Un ciclo de actualización probado en tu hardware antes de comprometerte</td></tr>
+      <tr><td>Revisión de costos en la nube</td><td>$200–600 / proyecto</td><td>Auditoría de desperdicio FinOps + plan en M365/Azure/AWS</td></tr>
+      <tr><td>Disposición segura</td><td>$50–120 / dispositivo</td><td>Borrado + certificado de disposición firmado</td></tr>
+      <tr><td>Retenedor mensual</td><td>$500–3,000 / mes</td><td>Salud continua de flota, preparación pre-tormenta, guardia</td></tr>
+    </table>
+    <p class="note">Atendemos pequeños negocios, Rental, oficinas médicas y operaciones de marina en New Smyrna Beach y la costa atlántica. Contactanos — atendemos el teléfono.</p>
+
+    <div class="stack-grid" style="margin-top:36px;">
+      <div class="stack-cell">
+        <h3>Área de servicio</h3>
+        <p>New Smyrna Beach y la costa atlántica de Volusia / Flagler, Florida. En sitio o remoto.</p>
+        <p>Llama o escribe: <a href="tel:+138****9994">(386) 265-9994</a></p>
+        <p><a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></p>
+      </div>
+      <div class="stack-cell">
+        <h3>Solicite una llamada</h3>
+        <form class="lead-form" action="https://formsubmit.co/el/wovefi" method="POST">
+          <input type="hidden" name="_next" value="https://zqm-computing.github.io/ZQM-Computing/thanks.html" />
+          <input type="hidden" name="_subject" value="New lead from ZQM Computing site" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" class="form-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div>
+            <label for="lf-name">Nombre</label>
+            <input id="lf-name" type="text" name="name" required />
+          </div>
+          <div>
+            <label for="lf-contact">Correo o teléfono</label>
+            <input id="lf-contact" type="text" name="email_or_phone" required />
+          </div>
+          <div>
+            <label for="lf-need">¿Qué necesita?</label>
+            <select id="lf-need" name="service">
+              <option>TI gestionada</option>
+              <option>Ciberseguridad / PQC</option>
+              <option>Control de costos en la nube (FinOps)</option>
+              <option>Consultoría de IA</option>
+              <option>Servicios web</option>
+              <option>Hogar / residencial</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div>
+            <label for="lf-msg">Detalles (opcional)</label>
+            <textarea id="lf-msg" name="message"></textarea>
+          </div>
+          <button type="submit">Enviar solicitud →</button>
+        </form>
+        <p class="note">Sin rastreadores. Llega directo a nuestro correo.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-brand">ZQM Computing <span>— Attestation &amp; Forensics</span></div>
+      <div class="foot-cred">
+        <span>Microsoft 365</span><span>Azure</span><span>AWS</span><span>CompTIA</span><span>HIPAA-ready</span>
+      </div>
+    </div>
+    <div>
+      <div class="foot-h">Área de servicio</div>
+      <div class="foot-towns">New Smyrna Beach · Daytona Beach · Ormond Beach · Flagler Beach · Edgewater y la costa atlántica de Volusia / Flagler, Florida</div>
+    </div>
+    <div>
+      <div class="foot-h">Contacto</div>
+      <p>Llama o escribe: <a href="tel:+138****9994">(386) 265-9994</a></p>
+      <p><a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></p>
+      <p><a class="book" href="mailto:zqmcomputing@gmail.com?subject=Book%20a%20consultation">Reservar consulta →</a></p>
+    </div>
+    <div>
+      <div class="foot-h">Páginas</div>
+      <p><a href="index.html">Inicio</a></p>
+      <p><a href="services.html">Hogar y Empresa</a></p>
+      <p><a href="advanced.html">Avanzado / I+D</a></p>
+      <p><a href="index.html#faq">Preguntas</a></p>
+    </div>
+  </div>
+  <div class="foot-priv">© ZQM Computing / ZQM-Labs — Privacidad: no recopilamos nada más allá de lo que nos envíe por correo. Sin rastreadores, sin cookies.</div>
+</footer>
+
+<div class="footer">
+  <a href="https://zqm-computing.github.io/ZQM-Computing/">Inicio</a> &middot;
+  <a href="https://zqm-computing.github.io/ZQM-Computing/projects.html">Proyectos</a> &middot;
+  <a href="https://zqm-computing.github.io/ZQM-Computing/services.html">Servicios</a> &middot;
+  <a href="https://zqm-computing.github.io/ZQM-Computing/advanced.html">Avanzado</a> &middot;
+  <a href="https://zqm-computing.github.io/ZQM-Computing/contact.html">Contacto</a> &middot;
+  <a href="https://zqm-labs.github.io/ZQM-Labs/">ZQM Labs</a> &middot;
+  <a href="mailto:zqmcomputing@gmail.com">Email</a>
+</div>
+
+</body>
+</html>
