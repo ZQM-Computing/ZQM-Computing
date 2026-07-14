@@ -1,61 +1,195 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact — ZQM Computing</title>
-<link rel="canonical" href="https://zqm-computing.github.io/ZQM-Computing/contact.html">
-<meta property="og:url" content="https://zqm-computing.github.io/ZQM-Computing/contact.html">
-<meta property="og:title" content="Contact — ZQM Computing">
-<meta name="description" content="Contact — ZQM Computing">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"ZQM Computing","url":"https://zqm-computing.github.io/ZQM-Computing/","email":"mailto:zqmcomputing@gmail.com","areaServed":"US-FL","contactType":"sales"}
-</script>
-<style>
-:root{color-scheme:light dark}
-*{box-sizing:border-box}
-body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:860px;margin:auto;padding:2.5rem 1.25rem;line-height:1.55;background:Canvas;color:CanvasText}
-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid color-mix(in srgb,currentColor 12%,transparent)}
-.brand{font-weight:700;font-size:1.1rem}
-nav a{margin-left:.75rem;text-decoration:none;opacity:.9}
-.card{padding:1.1rem 1.25rem;border:1px solid color-mix(in srgb,currentColor 12%,transparent);border-radius:14px;background:color-mix(in srgb,currentColor 3%,transparent);margin:1rem 0}
-.footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid color-mix(in srgb,currentColor 12%,transparent);opacity:.8;font-size:.9rem}
-</style>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://zqm-computing.github.io/ZQM-Computing/contact.html" />
+  <meta property="og:url" content="https://zqm-computing.github.io/ZQM-Computing/contact.html" />
+  <title>Contact — ZQM Computing</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ZQM Computing",
+    "url": "https://zqm-computing.github.io/ZQM-Computing/",
+    "email": "mailto:zqmcomputing@gmail.com",
+    "areaServed": "US-FL",
+    "contactType": "sales"
+  }
+  </script>
+  <style>
+    :root { --bg:#0b0c0f; --panel:#14161b; --ink:#e7e9ee; --muted:#8b909b; --accent:#36c5f0; --line:#23262e; --ok:#186a4b; --warn:#a36a00; --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; --max: 720px; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body { font-family: var(--font); background: var(--bg); color: var(--ink); line-height: 1.6; min-height: 100vh; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 28px 20px 80px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding-bottom:1rem; border-bottom:1px solid var(--line); }
+    .brand { font-weight:800; font-size:15px; letter-spacing:-0.01em; }
+    .brand span { color: var(--muted); font-weight: 500; }
+    nav { display:flex; gap:14px; align-items:center; flex-wrap:wrap; }
+    nav a { color:#cfd2d8; text-decoration:none; font-size:13px; font-weight:600; opacity:.92; }
+    nav a:hover { color:#fff; }
+    .hdr-cta { background: var(--accent); color:#0b0c0f; text-decoration:none; padding:8px 14px; border-radius:999px; font-size:13px; font-weight:700; }
+    .hdr-cta:hover { filter: brightness(1.1); }
+    .eyebrow { text-transform: uppercase; letter-spacing: .1em; font-size: 12px; color: var(--accent); margin-bottom: 10px; }
+    h1 { font-size: 30px; margin: 0 0 14px; letter-spacing: -0.02em; }
+    .lead { color: var(--muted); margin: 0 0 22px; max-width: 640px; }
+    .cta { display:inline-flex; align-items:center; gap:6px; background: var(--accent); color:#0b0c0f; text-decoration:none; padding:11px 16px; border-radius:8px; font-weight:700; }
+    .cta:hover { filter: brightness(1.1); }
+    .card { padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: #0f1116; margin: 14px 0; }
+    .proof { display:grid; gap:12px; }
+    .proof-item { padding: 14px; border: 1px solid var(--line); border-radius: 10px; background: #0f1116; }
+    .proof-item strong { display:block; margin-bottom:6px; }
+    table { width:100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); }
+    th { font-size:12px; text-transform:uppercase; letter-spacing:.07em; color: var(--muted); }
+    tr:last-child td, tr:last-child th { border-bottom:none; }
+    .lead-form { display:grid; gap:12px; }
+    .lead-form label { font-size:12px; font-weight:700; color:#cfd2d8; display:block; margin-bottom:4px; }
+    .lead-form input, .lead-form textarea, .lead-form select { width:100%; padding:10px 12px; font-size:14px; font-family: var(--font); background:#0b0d12; color:var(--ink); border:1px solid var(--line); border-radius:8px; }
+    .lead-form input:focus, .lead-form textarea:focus, .lead-form select:focus { outline:2px solid var(--accent); border-color: var(--accent); }
+    .lead-form textarea { min-height: 90px; resize: vertical; }
+    .lead-form button { background: var(--accent); color:#0b0c0f; border:none; border-radius:8px; padding:12px 16px; font-weight: 700; cursor:pointer; }
+    .lead-form button:hover { filter: brightness(1.1); }
+    .form-hp { position:absolute; left:-9999px; }
+    .foot-prim { margin-top: 8px; font-size: 13px; color:#cfd2d8; }
+    footer { margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+    .es { display:none; }
+    body.lang-es .en { display:none; }
+    body.lang-es .es { display:inline; }
+    body.lang-es .es.block { display:block; }
+    .en.block { display:block; }
+    .lang-toggle { background:#0b0d12; color:#cfd2d8; border:1px solid var(--line); border-radius:999px; padding:6px 12px; font-weight:700; cursor:pointer; }
+    @media (max-width: 640px) {
+      header { flex-wrap: wrap; gap: 10px; }
+      nav a { margin-left: 10px; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
 <header>
-  <div class="nav">
-    <div class="wordmark">ZQM Computing <span>— Attestation &amp; Forensics</span></div>
-    <nav>
-      <a class="en" href="https://zqm-computing.github.io/ZQM-Computing/#services">Services</a><a class="es" href="https://zqm-computing.github.io/ZQM-Computing/#services">Servicios</a>
-      <a class="en" href="services.html">Home &amp; Enterprise</a><a class="es" href="services.html">Hogar y Empresa</a>
-      <a class="en" href="https://zqm-computing.github.io/ZQM-Computing/#stack">Stack</a><a class="es" href="https://zqm-computing.github.io/ZQM-Computing/#stack">Stack</a>
-      <a class="en" href="https://zqm-computing.github.io/ZQM-Computing/#faq">FAQ</a><a class="es" href="https://zqm-computing.github.io/ZQM-Computing/#faq">Preguntas</a>
-      <a class="en" href="https://zqm-computing.github.io/ZQM-Computing/#engage">Engage</a><a class="es" href="https://zqm-computing.github.io/ZQM-Computing/#engage">Contacto</a>
-      <button id="langToggle" class="lang-toggle" aria-label="Switch language">ES</button>
-    </nav>
-    <a class="hdr-cta book-cta" href="mailto:zqmcomputing@gmail.com?subject=Book%20a%20consultation">Book</a>
-    <a class="hdr-cta" href="tel:+1382659994">Call (386) 265-9994</a>
-  </div>
+  <div class="brand">ZQM Computing <span>— Attestation &amp; Forensics</span></div>
+  <nav>
+    <a class="en" href="https://zqm-computing.github.io/ZQM-Computing/#services">Services</a><a class="es" href="https://zqm-computing.github.io/ZQM-Computing/#services">Servicios</a>
+    <a class="en" href="services.html">Home &amp; Enterprise</a><a class="es" href="services.html">Hogar y Empresa</a>
+    <a class="en" href="advanced.html">Advanced</a><a class="es" href="advanced.html">Avanzado</a>
+    <button id="langToggle" class="lang-toggle" aria-label="Switch language">ES</button>
+    <a class="hdr-cta" href="mailto:zqmcomputing@gmail.com?subject=Book%20a%20consultation">Book</a>
+  </nav>
 </header>
 
-<div class="card">
-  <h1>Contact</h1>
-  <p>Email: <a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></p>
-  <p>Atlantic coast / Florida. Remote and on-site engagements.</p>
-  <p><strong>Engagement types</strong></p>
-  <ul>
-    <li>Endpoint attestation: $150–500/endpoint</li>
-    <li>Automation: $75–150/hr</li>
-    <li>Retainer: $500–3000/mo</li>
-  </ul>
-</div>
+<main>
+  <section>
+    <div class="eyebrow">Florida engagement</div>
+    <h1 class="en">Start an engagement in one message.</h1>
+    <h1 class="es block">Iniciá una consulta en un mensaje.</h1>
+    <p class="lead en">Tell us what you need, budget range, and timeline. We respond within one business day and give you a concrete next step — not a voicemail loop.</p>
+    <p class="lead es block">Contanos qué necesitás, presupuesto y plazo. Respondemos en un día hábil con un paso concreto — no un circuito de voicemail.</p>
 
-<div class="footer">
-  <a href="https://zqm-computing.github.io/ZQM-Computing/">Home</a> &middot;
-  <a href="https://zqm-computing.github.io/ZQM-Computing/projects.html">Projects</a> &middot;
-  <a href="https://zqm-computing.github.io/ZQM-Computing/services.html">Services</a> &middot;
-  <a href="https://zqm-computing.github.io/ZQM-Computing/advanced.html">Advanced</a> &middot;
-  <a href="https://zqm-computing.github.io/ZQM-Computing/contact.html">Contact</a> &middot;
-  <a href="https://zqm-labs.github.io/ZQM-Labs/">ZQM Labs</a> &middot;
-  <a href="mailto:zqmcomputing@gmail.com">Email</a>
-</div>
+    <div class="proof">
+      <div class="proof-item">
+        <strong class="en">Direct contact</strong><strong class="es block">Contacto directo</strong>
+        <p><a href="mailto:zqmcomputing@gmail.com">zqmcomputing@gmail.com</a></p>
+        <p><a href="tel:+138****9994">(386) 265-9994</a> / <a href="sms:+138****9994">SMS</a></p>
+        <p class="en">Atlantic coast / Florida. Remote and on-site.</p>
+        <p class="es block">Costa atlántica / Florida. Remoto y en sitio.</p>
+      </div>
+      <div class="proof-item">
+        <strong class="en">Or request a callback</strong><strong class="es block">O pedí que te llamemos</strong>
+        <form class="lead-form" action="https://formsubmit.co/el/wovefi" method="POST">
+          <input type="hidden" name="_next" value="https://zqm-computing.github.io/ZQM-Computing/thanks.html" />
+          <input type="hidden" name="_subject" value="New lead from ZQM Computing site" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" class="form-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div>
+            <label for="lf-name" class="en">Name / Business</label><label for="lf-name" class="es block">Nombre / Negocio</label>
+            <input id="lf-name" type="text" name="name" required />
+          </div>
+          <div>
+            <label for="lf-contact" class="en">Email or phone</label><label for="lf-contact" class="es block">Correo o teléfono</label>
+            <input id="lf-contact" type="text" name="email_or_phone" required />
+          </div>
+          <div>
+            <label for="lf-need" class="en">What do you need?</label><label for="lf-need" class="es block">¿Qué necesitás?</label>
+            <select id="lf-need" name="service">
+              <option>Managed IT</option>
+              <option>Cybersecurity / PQC</option>
+              <option>Cloud cost control (FinOps)</option>
+              <option>AI consulting</option>
+              <option>Web services</option>
+              <option>Home / residential</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="lf-budget" class="en">Budget range</label><label for="lf-budget" class="es block">Presupuesto</label>
+            <select id="lf-budget" name="budget">
+              <option>Not sure yet</option>
+              <option><$500</option>
+              <option>$500–1,500</option>
+              <option>$1,500–5,000</option>
+              <option>>$5,000</option>
+            </select>
+          </div>
+          <div>
+            <label for="lf-timeline" class="en">Timeline</label><label for="lf-timeline" class="es block">Plazo</label>
+            <select id="lf-timeline" name="timeline">
+              <option>Not sure yet</option>
+              <option><2 weeks</option>
+              <option>2–4 weeks</option>
+              <option>1–3 months</option>
+              <option>>3 months / ongoing</option>
+            </select>
+          </div>
+          <div>
+            <label for="lf-site" class="en">Preferred surface</label><label for="lf-site" class="es block">Superficie preferida</label>
+            <select id="lf-site" name="site">
+              <option>ZQM Computing (managed IT, web)</option>
+              <option>ZQM Labs (attestation, AI council)</option>
+              <option>Either / not sure</option>
+            </select>
+          </div>
+          <div>
+            <label for="lf-msg" class="en">Details (optional)</label><label for="lf-msg" class="es block">Detalles (opcional)</label>
+            <textarea id="lf-msg" name="message"></textarea>
+          </div>
+          <button type="submit" class="en">Send request →</button>
+          <button type="submit" class="es block">Enviar solicitud →</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <section>
+    <h2 class="en">Reference rates</h2><h2 class="es block">Tarifas de referencia</h2>
+    <table>
+      <tr><th class="en">Type</th><th class="es block">Tipo</th><th class="en">Range</th><th class="es block">Rango</th><th class="en">Notes</th><th class="es block">Notas</th></tr>
+      <tr><td class="en">Endpoint attestation</td><td class="es block">Attestation de endpoint</td><td class="en">$150–500 / endpoint</td><td class="es block">$150–500 / endpoint</td><td class="en">Signed report bundle</td><td class="es block">Paquete de informe firmado</td></tr>
+      <tr><td class="en">Automation</td><td class="es block">Automatización</td><td class="en">$75–150 / hr</td><td class="es block">$75–150 / hr</td><td class="en">Fleet setup, rules, CI</td><td class="es block">Configuración, reglas, CI</td></tr>
+      <tr><td class="en">Monthly retainer</td><td class="es block">Retainer mensual</td><td class="en">$500–3,000 / mo</td><td class="es block">$500–3,000 / mes</td><td class="en">Storm-season on-call + health</td><td class="es block">Guardia pre-tormenta + salud</td></tr>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-prim">© ZQM Computing / ZQM-Labs — Privacy: we collect nothing beyond what you send by email or form. No trackers, no cookies.</div>
+  <div style="margin-top:10px">
+    <a href="https://zqm-labs.github.io/ZQM-Labs/">ZQM Labs</a> &middot;
+    <a href="mailto:zqmcomputing@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script>
+  var t = document.getElementById('langToggle');
+  t.onclick = function () {
+    var es = document.body.classList.toggle('lang-es');
+    document.documentElement.lang = es ? 'es' : 'en';
+    t.textContent = es ? 'EN' : 'ES';
+  };
+</script>
+</div>
+</body>
 </html>
