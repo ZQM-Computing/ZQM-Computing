@@ -4,3 +4,17 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# Credentials / env
+.env
+.env.*
+*.secret
+
+# Build outputs
+dist/
+build/
+*.html.bak
+*.html.es.bak
+
+# OS cruft
+desktop.ini
