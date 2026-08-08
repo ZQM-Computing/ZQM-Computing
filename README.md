@@ -1,5 +1,8 @@
 # ZQM Computing
 
+[![CI](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/ci.yml) [![Tests](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/tests.yml/badge.svg)](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/tests.yml) [![Ruff](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/ci.yml) [![mypy](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/ci.yml)
+
+
 ![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ZQM-Computing&layout=compact&theme=default&hide_border=true&hide=Jupyter+Notebook)
 
 ## About
