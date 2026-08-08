@@ -32,6 +32,13 @@ All repos are MIT-licensed. See [ZQM-Labs](https://github.com/ZQM-Labs) for rese
 
 ## Links
 
+
+## Related Repositories
+
+- [ZQM-AI-Council](https://github.com/ZQM-Labs/ZQM-AI-Council) — Multi-model AI council runtime
+- [Ollama Bridge](https://github.com/ZQM-Labs/ollama-bridge) — Ollama integration layer
+- [ZQM-Labs](https://github.com/ZQM-Labs/ZQM-Labs) — Cross-org mesh utilities
+
 - [ZQM Labs](https://github.com/ZQM-Labs)
 - [ZQM Computing GitHub Pages](https://zqm-computing.github.io/ZQM-Computing/)
 - [ZQM Labs GitHub Pages](https://zqm-labs.github.io/ZQM-Labs/)
