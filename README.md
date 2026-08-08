@@ -1,4 +1,6 @@
 # ZQM Computing
+[![Release](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/release.yml/badge.svg)](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/release.yml)
+
 
 ![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ZQM-Computing&layout=compact&theme=default&hide_border=true&hide=Jupyter+Notebook)
 
