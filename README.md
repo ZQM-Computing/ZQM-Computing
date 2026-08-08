@@ -1,5 +1,10 @@
 # ZQM Computing
 
+![CI](https://github.com/ZQM-Computing/ZQM-Computing/actions/workflows/ci.yml/badge.svg)
+![Ruff](https://img.shields.io/badge/lint-ruff-blue)
+![Mypy](https://img.shields.io/badge/type--check-mypy-green)
+
+
 Marketing site for ZQM Computing — 2026 IT services for Florida businesses:
 managed IT, preemptive cybersecurity, cloud cost control (FinOps), and AI consulting.
 Attestation-grade, delivered local to the Volusia / Flagler Atlantic coast.
