@@ -1,14 +1,29 @@
-# ZQM Labs — Z's Quests & Mischief
+# ZQM Computing — Geospatial Arm of ZQM Labs
 
-**Games, gear & a little mischief.** Location-based scavenger-hunt games for neighborhoods, schools, churches, scout troops, and office parties across Volusia County, Florida.
+**ZQM Computing** is the geospatial engineering arm of **ZQM Labs** — the games studio behind Z's Quests & Mischief. We build the geospatial patterns, data infrastructure, and tooling that ground ZQM Labs games in real-world locations across Volusia County, Florida.
 
-- **Location quests** — self-guided QR scavenger hunts, a new edition every season (first up: Halloween). Set the Dial: Cozy Glow -> Spooky -> After Dark -> Full Madness.
-- **Gamification engine** — leaderboards, achievements, XP, and streaks. The portal tracks engagement and rewards exploration.
-- **Party gear rentals** — coming soon.
+## What we do
 
-## Geospatial & infrastructure work
+- **Geospatial patterns** — production-tested open-source repos for every layer of the geospatial stack
+- **Data infrastructure** — Project Volusia data portal, DuckDB analytics, PostGIS system of record
+- **Tooling** — conversion (GDAL), Python (GeoPandas), routing (pgRaster), rasters (COG/STAC), frontend (MapLibre), grids (H3)
+- **AI ops** — Ollama fleet management patterns
 
-The pinned repositories are the other side of the bench — open-source patterns from 12 years of GIS platform, data-engineering, and infrastructure work by Alex Zelenski, GISP:
+## The games connection
+
+ZQM Labs builds location-based scavenger-hunt games (Z's Quests & Mischief). ZQM Computing provides the geospatial engine:
+
+- **QGIS** — desktop mapping for game design
+- **GDAL** — raster/vector conversion for game assets
+- **GeoPandas** — spatial analysis for location selection
+- **PostGIS** — system of record for game data
+- **pgRouting** — route optimization for game paths
+- **DuckDB** — fast analytics on game telemetry
+- **COG/STAC** — cloud-native raster serving for game maps
+- **MapLibre** — frontend rendering for game UIs
+- **H3** — hexagonal grid for location binning and leaderboards
+
+## Geospatial repos (19 public)
 
 ### System of record
 - **[postgis-patterns](https://github.com/ZQM-Computing/postgis-patterns)** — production PostGIS patterns: spatial indexing, MVT, KNN
@@ -36,6 +51,12 @@ The pinned repositories are the other side of the bench — open-source patterns
 - **[proxmox-ceph-operations](https://github.com/ZQM-Computing/proxmox-ceph-operations)** — Proxmox VE + Ceph operations runbooks
 - **[ollama-fleet-patterns](https://github.com/ZQM-Computing/ollama-fleet-patterns)** — Ollama fleet operations & a minimal RAG reference
 
+### Games monorepo
+- **[zqm-labs](https://github.com/ZQM-Computing/zqm-labs)** — Z's Quests & Mischief: player PWA, PocketBase backend, Twine content, Hugo site, Docker infra
+
+### Umbrella
+- **[geospatial-patterns](https://github.com/ZQM-Computing/geospatial-patterns)** — umbrella index of all geospatial pattern repos
+
 Contact: zqmcomputing@gmail.com
 
-*Play more. Plan less.* -> [zqmlabs.com](https://zqmlabs.com)
+*Part of [ZQM Labs](https://github.com/ZQM-Labs) — games, gear & a little mischief. Play more. Plan less.*
