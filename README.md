@@ -44,7 +44,7 @@ ZQM Labs builds location-based scavenger-hunt games (Z's Quests & Mischief). ZQM
 
 ## Games monorepo
 
-- **zqm-labs *(private)*** — Z's Quests & Mischief: player PWA, PocketBase backend, Twine content, Hugo site, Docker infra
+- **zqm-labs** (private) — Z's Quests & Mischief: player PWA, PocketBase backend, Twine content, Hugo site, Docker infra
 
 ## Quick start
 
