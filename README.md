@@ -32,7 +32,7 @@ ZQM Labs builds location-based scavenger-hunt games (Z's Quests & Mischief). ZQM
 | Frontend | MapLibre | Game UI rendering |
 | Grid | H3 | Location binning, leaderboards |
 
-## Geospatial repos (14 public)
+## Geospatial repos (15 public)
 
 | Layer | Repo | Description |
 |---|---|---|
