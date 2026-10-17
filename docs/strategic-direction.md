@@ -24,9 +24,9 @@ Publish practical, reproducible geospatial engineering patterns that help develo
 
 ## Scope boundaries
 
-- Keep Project Volusia research/data systems internal and access-controlled.
-- Do not use ZQM Computing as a channel for flood-modeling or resilience-data sharing.
-- Do not reference Clearview on ZQM GitHub.
+- Keep internal research systems, non-public datasets, and access-controlled services private.
+- Publish only data and examples explicitly approved for public release; do not imply that public repositories expose internal systems.
+- Keep ZQM Computing and ZQM Labs distinct, linking only to approved public resources.
 - Do not expand the name “ZQM Computing.”
 - Preserve the visual identity rule that Dr. Z appears in every ZQM logo. The lantern motif is reserved for Halloween use and should not become a general ZQM Computing symbol.
 
@@ -54,6 +54,6 @@ Track reproducible quick starts, selected clean-environment test results, broken
 
 ## Relationship to ZQM Labs
 
-ZQM Computing and ZQM Labs remain distinct brands. ZQM Computing focuses on geospatial engineering; ZQM Labs focuses on global, community-centered games. Public cross-links should help readers, while internal Project Volusia services and data remain private.
+ZQM Computing and ZQM Labs remain distinct brands. ZQM Computing focuses on geospatial engineering; ZQM Labs focuses on global, community-centered games. Public cross-links should help readers, while internal services and non-public data remain private.
 
 The detailed joint roadmap and operational controls are maintained in the private ZQM Labs engineering workspace.
