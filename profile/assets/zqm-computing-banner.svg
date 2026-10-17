@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+<title id="title">ZQM Computing — Geospatial Engineering</title><desc id="desc">Dark scientific computing banner with topographic contours, a spatial grid, and geospatial engineering branding.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081522"/><stop offset=".55" stop-color="#102b3b"/><stop offset="1" stop-color="#173e4a"/></linearGradient><pattern id="hex" width="54" height="47" patternUnits="userSpaceOnUse"><path d="M13.5 1 27 8.5v15L13.5 31 0 23.5v-15Z M40.5 24 54 31.5v15L40.5 54 27 46.5v-15Z" fill="none" stroke="#56d6d0" stroke-opacity=".13" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="320" rx="22" fill="url(#bg)"/><rect width="1200" height="320" rx="22" fill="url(#hex)"/>
+<g fill="none" stroke="#56d6d0" stroke-width="2" opacity=".27"><path d="M700 330c-60-70 30-105 0-160s30-90 0-190"/><path d="M742 330c-60-70 30-105 0-160s30-90 0-190"/><path d="M784 330c-60-70 30-105 0-160s30-90 0-190"/><path d="M826 330c-60-70 30-105 0-160s30-90 0-190"/><path d="M868 330c-60-70 30-105 0-160s30-90 0-190"/></g>
+<g fill="none" stroke="#7fe2c3" stroke-opacity=".4"><path d="M825 45c58-30 132-9 145 34s-25 61-3 95 86 32 85 82-54 60-80 64"/><path d="M845 61c46-22 105-4 115 29s-22 50-1 78 75 30 74 69-44 48-65 51"/><path d="M867 77c33-15 76-1 84 24s-19 38 0 62 61 27 60 57-33 35-51 38"/></g>
+<g transform="translate(900 85)"><circle cx="110" cy="75" r="72" fill="#0a1b29" stroke="#56d6d0" stroke-width="3"/><path d="M110 15 125 60 170 75 125 90 110 135 95 90 50 75 95 60Z" fill="#56d6d0" opacity=".92"/><circle cx="110" cy="75" r="10" fill="#f1f7f6"/><path d="M110 0V150M35 75H185" stroke="#f1f7f6" stroke-opacity=".45" stroke-width="1.5"/></g>
+<text x="72" y="91" fill="#7fe2c3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="5">ZQM COMPUTING</text>
+<text x="68" y="153" fill="#f1f7f6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="45" font-weight="800" letter-spacing="-1">Geospatial Engineering</text>
+<text x="72" y="202" fill="#b7d6dc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="500" letter-spacing=".8">SPATIAL DATA · SCIENTIFIC COMPUTING · OPEN PATTERNS</text>
+<rect x="72" y="236" width="118" height="4" rx="2" fill="#56d6d0"/><circle cx="212" cy="238" r="4" fill="#7fe2c3"/><circle cx="232" cy="238" r="4" fill="#7fe2c3"/><circle cx="252" cy="238" r="4" fill="#7fe2c3"/>
+</svg>
