@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/zqm-computing-banner.svg" alt="ZQM Computing — Geospatial Engineering: spatial data, scientific computing, and open patterns" width="100%" />
+</p>
+
 # ZQM Computing — Geospatial Engineering
 
 <p align="center">
