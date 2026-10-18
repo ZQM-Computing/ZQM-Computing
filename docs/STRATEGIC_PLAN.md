@@ -39,6 +39,14 @@ A polished README alone does not promote a repo to Tier A. Require executed chec
 7. Record release notes, known issues, and rollback.
 8. Compare deployed content with the intended commit before calling it released.
 
+## Cross-estate alignment from the 83-repository audit
+
+The supplied consolidated audit reports 83 repositories across ZQM-Computing and ZQM-Labs. Reconcile counts and findings against a fresh GitHub inventory before treating them as current.
+
+For the public geospatial portfolio, keep `geospatial-patterns` as the umbrella/index and each technology-specific repository canonical only for its bounded subject. The audit reports 11 geospatial technology repos and describes them as MIT, dependency-light, and runnable; verify actual license files and clean-environment execution before making this a blanket claim. Use the umbrella for navigation and cross-cutting examples, not as a reason for bulk migration.
+
+Cross-estate risks include 36/62 active repositories reportedly having permanently-red supply-chain scans because existing debt is not distinguished from newly introduced findings; six repos reportedly claiming capabilities not delivered; and two unreviewed PRs (`ZQM-Labs/ollama-bridge#15`, `ZQM-Labs/zqm-hermes-skills#25`). Baseline-aware scans must keep inherited findings visible, gate new findings, and never suppress critical exploitable issues just to restore green status. Review stale PRs at current head SHA, including full diff, security impact, and executed checks. See the [prioritized estate remediation plan](https://github.com/ZQM-Labs/zqm-wiki/blob/main/docs/estate-remediation-plan-2026-10-18.md).
+
 ## Roadmap
 
 ### Phase 1 — Truth and trust (18 October–December 2026)
