@@ -12,6 +12,10 @@
 
 **ZQM Computing** is the geospatial engineering arm of **ZQM Labs** — the games studio behind Z's Quests & Mischief. We build the geospatial patterns, data infrastructure, and tooling that ground ZQM Labs games in real-world locations across Volusia County, Florida.
 
+## Strategy and operating standards
+
+See [ZQM Computing 12-month strategy](docs/STRATEGIC_PLAN.md) for repository quality tiers, reproducibility standards, Pages governance, and the portfolio roadmap. The strategy is proposed for review; it does not claim all checks or deployments currently pass.
+
 ## Who this is for
 
 Geospatial developers, GIS analysts, data engineers, and Python developers who need production-tested patterns for spatial data workflows. Also game developers building location-based experiences.
