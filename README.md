@@ -80,14 +80,6 @@ docker-compose up -d  # pgrouting-patterns
 - **Tooling** — conversion (GDAL), Python (GeoPandas), routing (pgRouting), rasters (COG/STAC), frontend (MapLibre), grids (H3)
 - **AI ops** — Ollama fleet management patterns
 
-## Installation
-
-```bash
-pip install -e .
-```
-
-Requires Python 3.11+.
-
 ## License
 
 All repos are MIT licensed — see each repo's LICENSE file.
