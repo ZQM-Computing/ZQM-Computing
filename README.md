@@ -107,3 +107,14 @@ Contact: zqmcomputing@gmail.com
   <a href="https://github.com/ZQM-Computing">ZQM Computing</a>
 </p>
 <!-- ZQM-FOOTER-END -->
+
+## Validation
+
+This repository uses GitHub Actions for continuous integration. See [CI workflow](.github/workflows/ci.yml) for details.
+
+To validate locally:
+
+```bash
+# Run documentation checks
+python scripts/check_docs.py
+```
