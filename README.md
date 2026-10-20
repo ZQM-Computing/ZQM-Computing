@@ -1,14 +1,14 @@
 # ZQM Computing — Geospatial Arm of ZQM Labs
 
 <!-- ZQM-START -->
+<!-- markdownlint-disable MD033 -->
 <p align="center">
   <strong>ZQM Labs — Z's Quests & Mischief</strong><br>
   <a href="https://zqmlabs.com">zqmlabs.com</a> •
   <a href="https://github.com/ZQM-Labs">GitHub</a>
 </p>
+<!-- markdownlint-enable MD033 -->
 <!-- ZQM-END -->
-
-
 
 **ZQM Computing** is the geospatial engineering arm of **ZQM Labs** — the games studio behind Z's Quests & Mischief. We build the geospatial patterns, data infrastructure, and tooling that ground ZQM Labs games in real-world locations across Volusia County, Florida.
 
@@ -92,12 +92,12 @@ Requires Python 3.11+.
 
 All repos are MIT licensed — see each repo's LICENSE file.
 
-Contact: zqmcomputing@gmail.com
+Contact: <zqmcomputing@gmail.com>
 
 *Part of [ZQM Labs](https://github.com/ZQM-Labs) — games, gear & a little mischief. Play more. Plan less.*
 
-
 <!-- ZQM-FOOTER-START -->
+<!-- markdownlint-disable MD033 -->
 ---
 
 <p align="center">
@@ -106,6 +106,7 @@ Contact: zqmcomputing@gmail.com
   <a href="https://github.com/ZQM-Labs">ZQM Labs</a> •
   <a href="https://github.com/ZQM-Computing">ZQM Computing</a>
 </p>
+<!-- markdownlint-enable MD033 -->
 <!-- ZQM-FOOTER-END -->
 
 ## Validation
