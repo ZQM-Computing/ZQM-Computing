@@ -111,7 +111,7 @@ Contact: <zqmcomputing@gmail.com>
 
 ## Validation
 
-This repository uses GitHub Actions for continuous integration. See [CI workflow](.github/workflows/ci.yml) for details.
+This repository uses GitHub Actions for continuous integration. See [CI workflow](https://github.com/ZQM-Computing/ZQM-Computing/actions) for details.
 
 To validate locally:
 
