@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD033 MD041 -->
 <p align="center">
   <img src="assets/zqm-computing-banner.svg" alt="ZQM Computing — Geospatial Engineering: spatial data, scientific computing, and open patterns" width="100%" />
 </p>
@@ -48,6 +49,7 @@ ZQM Computing is the geospatial engineering arm of [ZQM Labs](https://github.com
 ## 🏗️ How It Connects to Games
 
 Our games (Wisp's Lost Lanterns, etc.) use these patterns to:
+
 - Bin locations into H3 cells for scalable game areas
 - Serve vector tiles (ST_AsMVT) for in-game maps
 - Query spatial data with PostGIS for proximity detection
@@ -64,3 +66,4 @@ All repos are MIT-licensed. Each repo includes runnable examples with Docker whe
   <a href="https://zqmlabs.com">zqmlabs.com</a> •
   <a href="https://github.com/ZQM-Labs">ZQM Labs</a>
 </p>
+<!-- markdownlint-enable MD033 MD041 -->
