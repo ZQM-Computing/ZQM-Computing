@@ -12,6 +12,16 @@
 
 **ZQM Computing** is the geospatial engineering arm of **ZQM Labs** — the games studio behind Z's Quests & Mischief. We build the geospatial patterns, data infrastructure, and tooling that ground ZQM Labs games in real-world locations across Volusia County, Florida.
 
+## Repository role and status
+
+**Status:** Active, public. Documented verdict (2026-10-19 estate audit): **KEEP**.
+
+**What this repository is:** The ZQM-Computing account profile repository — its README is what GitHub renders on the public ZQM-Computing profile page. It introduces ZQM Computing as the geospatial engineering arm of ZQM Labs, states the strategy and operating standards, and points readers at the geospatial pattern portfolio.
+
+**What it contributes:** The account's public front door. It is the first thing a visitor to the ZQM-Computing account sees, and the canonical short statement of what the account is and what it publishes.
+
+**Standing:** A public brand surface, not scaffolding — deleting it would remove the account profile page. No deployment depends on it, but its profile role is load-bearing for the account's public presence.
+
 ## Strategy and operating standards
 
 See [ZQM Computing 12-month strategy](docs/STRATEGIC_PLAN.md) for repository quality tiers, reproducibility standards, Pages governance, and the portfolio roadmap. The strategy is proposed for review; it does not claim all checks or deployments currently pass.
