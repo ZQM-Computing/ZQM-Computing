@@ -32,7 +32,7 @@ Geospatial developers, GIS analysts, data engineers, and Python developers who n
 
 ## The games connection
 
-ZQM Labs builds location-based scavenger-hunt games (Z's Quests & Mischief). ZQM Computing provides the geospatial engine:
+ZQM Labs builds location-based scavenger-hunt games (Z's Quests & Mischief). ZQM Computing is its geospatial engineering arm. The table maps each pattern layer to the game function its techniques serve — read it as a design-intent map, not a runtime dependency claim: the pattern repos are standalone libraries (each states that no other repository or deployment depends on it), and the live games currently run as an offline-first PWA with a lightweight backend, not on this stack:
 
 | Layer | Tool | Use in games |
 |---|---|---|
