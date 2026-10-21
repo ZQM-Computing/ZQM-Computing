@@ -48,6 +48,8 @@ ZQM Labs builds location-based scavenger-hunt games (Z's Quests & Mischief). ZQM
 
 ## Geospatial repos (15 public)
 
+**Live documentation:** the pattern series is published as doc sites — [cog](https://cog.zqmlabs.com) · [duckdb](https://duckdb.zqmlabs.com) · [gdal](https://gdal.zqmlabs.com) · [geopandas](https://geopandas.zqmlabs.com) · [geoparquet](https://geoparquet.zqmlabs.com) · [h3](https://h3.zqmlabs.com) · [maplibre](https://maplibre.zqmlabs.com) · [pgrouting](https://pgrouting.zqmlabs.com) · [postgis](https://postgis.zqmlabs.com) · [stac](https://stac.zqmlabs.com)
+
 | Layer | Repo | Description |
 |---|---|---|
 | System of Record | [postgis-patterns](https://github.com/ZQM-Computing/postgis-patterns) | Production PostGIS patterns: spatial indexing, MVT, KNN |
