@@ -88,7 +88,7 @@ docker-compose up -d  # pgrouting-patterns
 ## What we do
 
 - **Geospatial patterns** — production-tested open-source repos for every layer of the geospatial stack
-- **Data infrastructure** — Project Volusia data portal, DuckDB analytics, PostGIS system of record
+- **Data infrastructure** — DuckDB analytics, PostGIS system of record
 - **Tooling** — conversion (GDAL), Python (GeoPandas), routing (pgRouting), rasters (COG/STAC), frontend (MapLibre), grids (H3)
 - **AI ops** — Ollama fleet management patterns
 
