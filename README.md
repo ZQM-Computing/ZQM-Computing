@@ -1,9 +1,8 @@
 # ZQM Computing
 
-**ZQM Computing builds the Global Observatory** — a self-hosted, open-source
-observatory that turns public data into mapped, verifiable intelligence:
-GEOINT (land, water, infrastructure, imagery, sensors) and OSINT (entities,
-domains, records, signals) fused into one picture.
+**ZQM Computing builds geospatial data engineering tools and the Global Observatory** — open-source GIS, spatial data engineering, and self-hosted public-data intelligence. The portfolio covers QGIS/PyQGIS automation, GDAL/OGR conversion, GeoPandas analysis, PostGIS databases, spatial routing, GeoParquet analytics, cloud-optimized GeoTIFFs (COGs), STAC catalogs, OGC APIs, MapLibre maps, H3 aggregation, and local-LLM operations.
+
+The Global Observatory is a separate application direction: it turns appropriately licensed public sources into mapped, verifiable intelligence. Repository examples, plans, and documentation are not evidence that a live deployment or end-to-end integration exists.
 
 **Volusia County, Florida is the proving ground, not the boundary.** The
 pattern is built to travel anywhere public data allows, and the AI tools grown
