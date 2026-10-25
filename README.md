@@ -1,80 +1,70 @@
-# ZQM Computing — Geospatial Arm of ZQM Labs
+# ZQM Computing
 
-<!-- ZQM-START -->
-<!-- markdownlint-disable MD033 -->
-<p align="center">
-  <strong>ZQM Labs — Z's Quests & Mischief</strong><br>
-  <a href="https://zqmlabs.com">zqmlabs.com</a> •
-  <a href="https://github.com/ZQM-Labs">GitHub</a>
-</p>
-<!-- markdownlint-enable MD033 -->
-<!-- ZQM-END -->
+**ZQM Computing builds the Global Observatory** — a self-hosted, open-source
+observatory that turns public data into mapped, verifiable intelligence:
+GEOINT (land, water, infrastructure, imagery, sensors) and OSINT (entities,
+domains, records, signals) fused into one picture.
 
-**ZQM Computing** is the geospatial engineering arm of **ZQM Labs** — the games studio behind Z's Quests & Mischief. We build the geospatial patterns, data infrastructure, and tooling that ground ZQM Labs games in real-world locations across Volusia County, Florida.
+**Volusia County, Florida is the proving ground, not the boundary.** The
+pattern is built to travel anywhere public data allows, and the AI tools grown
+on it are meant for everyone's use.
 
-## Repository role and status
+## Focus
 
-**Status:** Active, public. Documented verdict (2026-10-19 estate audit): **KEEP**.
+- **Safety** — safe places and routes, and the conditions that make them safe.
+- **Situational awareness** — what is happening around you right now.
+- **Operational awareness** — the state of the systems, services, and activities
+  you depend on.
+- **Security awareness** — threats and risks, as one of the three awarenesses,
+  not the whole.
+- **Family values** — family-friendly places and activities, and products a
+  family can use and trust.
 
-**What this repository is:** The ZQM-Computing account profile repository — its README is what GitHub renders on the public ZQM-Computing profile page. It introduces ZQM Computing as the geospatial engineering arm of ZQM Labs, states the strategy and operating standards, and points readers at the geospatial pattern portfolio.
+## Principles
 
-**What it contributes:** The account's public front door. It is the first thing a visitor to the ZQM-Computing account sees, and the canonical short statement of what the account is and what it publishes.
+1. **Public/open sources only.** No credentialed, paywalled, or private data.
+2. **Passive-only against third parties.** Active tools run on owned or
+   authorized targets only.
+3. **Verify before claim.** Source, retrieval date, and method on every product.
+4. **No purchases, ever.** The entire stack is free and open-source.
 
-**Standing:** A public brand surface, not scaffolding — deleting it would remove the account profile page. No deployment depends on it, but its profile role is load-bearing for the account's public presence.
+## The Observatory
 
-## Strategy and operating standards
+- [zqm-observatory](https://github.com/ZQM-Computing/zqm-observatory) — the
+  Observatory's home: mission, focus, principles, and products. License:
+  Apache 2.0 for code, CC BY 4.0 for data products.
 
-See [ZQM Computing 12-month strategy](docs/STRATEGIC_PLAN.md) for repository quality tiers, reproducibility standards, Pages governance, and the portfolio roadmap. The strategy is proposed for review; it does not claim all checks or deployments currently pass.
+## Cookbooks — production-tested geospatial methods
 
-## Who this is for
-
-Geospatial developers, GIS analysts, data engineers, and Python developers who need production-tested patterns for spatial data workflows. Also game developers building location-based experiences.
-
-## The games connection
-
-ZQM Labs builds location-based scavenger-hunt games (Z's Quests & Mischief). ZQM Computing is its geospatial engineering arm. The table maps each pattern layer to the game function its techniques serve — read it as a design-intent map, not a runtime dependency claim: the pattern repos are standalone libraries (each states that no other repository or deployment depends on it), and the live games currently run as an offline-first PWA with a lightweight backend, not on this stack:
-
-| Layer | Tool | Use in games |
-|---|---|---|
-| Desktop | QGIS | Game design, location scouting |
-| Conversion | GDAL | Asset processing, reprojection |
-| Python | GeoPandas | Spatial analysis, location selection |
-| Database | PostGIS | System of record for game data |
-| Routing | pgRouting | Route optimization, game paths |
-| Analytics | DuckDB | Fast telemetry analysis |
-| Raster | COG/STAC | Cloud-native map serving |
-| Frontend | MapLibre | Game UI rendering |
-| Grid | H3 | Location binning, leaderboards |
-
-## Geospatial repos (15 public)
-
-**Live documentation:** the pattern series is published as doc sites — [cog](https://cog.zqmlabs.com) · [duckdb](https://duckdb.zqmlabs.com) · [gdal](https://gdal.zqmlabs.com) · [geopandas](https://geopandas.zqmlabs.com) · [geoparquet](https://geoparquet.zqmlabs.com) · [h3](https://h3.zqmlabs.com) · [maplibre](https://maplibre.zqmlabs.com) · [pgrouting](https://pgrouting.zqmlabs.com) · [postgis](https://postgis.zqmlabs.com) · [stac](https://stac.zqmlabs.com)
+**Live cookbook docs:** [cog](https://cog.zqmlabs.com) ·
+[duckdb](https://duckdb.zqmlabs.com) · [gdal](https://gdal.zqmlabs.com) ·
+[geopandas](https://geopandas.zqmlabs.com) ·
+[geoparquet](https://geoparquet.zqmlabs.com) · [h3](https://h3.zqmlabs.com) ·
+[maplibre](https://maplibre.zqmlabs.com) ·
+[pgrouting](https://pgrouting.zqmlabs.com) ·
+[postgis](https://postgis.zqmlabs.com) · [stac](https://stac.zqmlabs.com)
 
 | Layer | Repo | Description |
-|---|---|---|
-| System of Record | [postgis-patterns](https://github.com/ZQM-Computing/postgis-patterns) | Production PostGIS patterns: spatial indexing, MVT, KNN |
-| System of Record | [pgrouting-patterns](https://github.com/ZQM-Computing/pgrouting-patterns) | Routing, shortest path, isochrones, network analysis |
+| --- | --- | --- |
+| System of Record | [postgis-cookbook](https://github.com/ZQM-Computing/postgis-cookbook) | Production PostGIS patterns: spatial indexing, MVT, KNN |
+| System of Record | [pgrouting-cookbook](https://github.com/ZQM-Computing/pgrouting-cookbook) | Routing, shortest path, isochrones, network analysis |
 | System of Record | [geospatial-api-reference](https://github.com/ZQM-Computing/geospatial-api-reference) | OGC API - Features with FastAPI + PostGIS |
-| Conversion | [gdal-patterns](https://github.com/ZQM-Computing/gdal-patterns) | GDAL/OGR CLI: reprojection, conversion, VRT |
-| Python | [geopandas-patterns](https://github.com/ZQM-Computing/geopandas-patterns) | GeoPandas: spatial joins, CRS, overlays |
-| Columnar | [geoparquet-patterns](https://github.com/ZQM-Computing/geoparquet-patterns) | GeoParquet: partitioning, predicate pushdown |
-| Raster | [cog-patterns](https://github.com/ZQM-Computing/cog-patterns) | Cloud Optimized GeoTIFF: creation, serving |
-| Discovery | [stac-patterns](https://github.com/ZQM-Computing/stac-patterns) | STAC: catalogs, validation, search API |
-| Frontend | [maplibre-patterns](https://github.com/ZQM-Computing/maplibre-patterns) | MapLibre GL JS: vector tiles, 3D terrain |
-| Grid | [h3-patterns](https://github.com/ZQM-Computing/h3-patterns) | H3: hexagonal binning, aggregation |
+| Conversion | [gdal-cookbook](https://github.com/ZQM-Computing/gdal-cookbook) | GDAL/OGR CLI: reprojection, conversion, VRT |
+| Python | [geopandas-cookbook](https://github.com/ZQM-Computing/geopandas-cookbook) | GeoPandas: spatial joins, CRS, overlays |
+| Columnar | [geoparquet-cookbook](https://github.com/ZQM-Computing/geoparquet-cookbook) | GeoParquet: partitioning, predicate pushdown |
+| Raster | [cog-cookbook](https://github.com/ZQM-Computing/cog-cookbook) | Cloud Optimized GeoTIFF: creation, serving |
+| Discovery | [stac-cookbook](https://github.com/ZQM-Computing/stac-cookbook) | STAC: catalogs, validation, search API |
+| Frontend | [maplibre-cookbook](https://github.com/ZQM-Computing/maplibre-cookbook) | MapLibre GL JS: vector tiles, 3D terrain |
+| Grid | [h3-cookbook](https://github.com/ZQM-Computing/h3-cookbook) | H3: hexagonal binning, aggregation |
 | Desktop | [qgis-resources](https://github.com/ZQM-Computing/qgis-resources) | QGIS expressions, PyQGIS, styles |
-| Analytics | [duckdb-spatial-patterns](https://github.com/ZQM-Computing/duckdb-spatial-patterns) | DuckDB: SQL spatial, GeoParquet, H3 |
+| Analytics | [duckdb-spatial-cookbook](https://github.com/ZQM-Computing/duckdb-spatial-cookbook) | DuckDB: SQL spatial, GeoParquet, H3 |
 | Infrastructure | [proxmox-ceph-operations](https://github.com/ZQM-Computing/proxmox-ceph-operations) | Proxmox VE + Ceph runbooks |
-| AI ops | [ollama-fleet-patterns](https://github.com/ZQM-Computing/ollama-fleet-patterns) | Ollama fleet operations |
-| Umbrella | [geospatial-patterns](https://github.com/ZQM-Computing/geospatial-patterns) | Index of all geospatial repos |
-
-## Games monorepo
-
-- **zqm-labs** (private) — Z's Quests & Mischief: player PWA, PocketBase backend, Twine content, Hugo site, Docker infra
+| AI ops | [ollama-fleet-cookbook](https://github.com/ZQM-Computing/ollama-fleet-cookbook) | Ollama fleet operations |
+| Umbrella | [geospatial-cookbooks](https://github.com/ZQM-Computing/geospatial-cookbooks) | Index of all geospatial repos |
 
 ## Quick start
 
-```bash
+```
 # Python stack
 pip install geopandas duckdb pystac rasterio h3
 
@@ -82,44 +72,41 @@ pip install geopandas duckdb pystac rasterio h3
 sudo apt install gdal-bin postgresql postgis pgrouting
 
 # Docker stack
-docker-compose up -d  # pgrouting-patterns
+docker-compose up -d  # pgrouting-cookbook
 ```
+
+## Who this is for
+
+Geospatial developers, GIS analysts, data engineers, and Python developers
+who need production-tested methods for spatial data workflows — and
+communities and families who want honest, sourced answers about the places
+around them.
 
 ## What we do
 
-- **Geospatial patterns** — production-tested open-source repos for every layer of the geospatial stack
-- **Data infrastructure** — DuckDB analytics, PostGIS system of record
-- **Tooling** — conversion (GDAL), Python (GeoPandas), routing (pgRouting), rasters (COG/STAC), frontend (MapLibre), grids (H3)
-- **AI ops** — Ollama fleet management patterns
+- **The Observatory** — living map layers, a STAC imagery catalog, a weekly
+  intel digest, community briefs, and family guides, all sourced and dated.
+- **Cookbooks** — production-tested open-source methods for every layer of
+  the geospatial stack.
+- **Data infrastructure** — DuckDB analytics, PostGIS system of record.
+- **Tooling** — conversion (GDAL), Python (GeoPandas), routing (pgRouting),
+  rasters (COG/STAC), frontend (MapLibre), grids (H3).
+- **AI ops** — Ollama fleet management.
 
-## License
+## Sister projects
 
-All repos are MIT licensed — see each repo's LICENSE file.
+ZQM Labs builds location games ([Z's Quests & Mischief](https://zqmlabs.com))
+with open geospatial methods — the same craft behind these cookbooks. ZQM
+Computing provides the supporting infrastructure behind those games: the
+methods, tools, and data infrastructure they are built on. The two projects
+are siblings: shared methods, shared love of real places, each standing on
+its own. Nothing here depends on the games.
+
+## Licenses
+
+Licenses vary by repo — see each repo's LICENSE file. The Observatory
+(zqm-observatory) is Apache 2.0 for code and CC BY 4.0 for data products.
 
 Contact: <zqmcomputing@gmail.com>
 
-*Part of [ZQM Labs](https://github.com/ZQM-Labs) — games, gear & a little mischief. Play more. Plan less.*
-
-<!-- ZQM-FOOTER-START -->
-<!-- markdownlint-disable MD033 -->
----
-
-<p align="center">
-  <em>Play more. Plan less.</em><br>
-  <a href="https://zqmlabs.com">zqmlabs.com</a> •
-  <a href="https://github.com/ZQM-Labs">ZQM Labs</a> •
-  <a href="https://github.com/ZQM-Computing">ZQM Computing</a>
-</p>
-<!-- markdownlint-enable MD033 -->
-<!-- ZQM-FOOTER-END -->
-
-## Validation
-
-This repository uses GitHub Actions for continuous integration. See [CI workflow](https://github.com/ZQM-Computing/ZQM-Computing/actions) for details.
-
-To validate locally:
-
-```bash
-# Run documentation checks
-python scripts/check_docs.py
-```
+*Built once in Volusia, built to travel.*
