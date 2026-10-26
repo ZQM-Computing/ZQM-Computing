@@ -33,7 +33,7 @@ on it are meant for everyone's use.
   Observatory's home: mission, focus, principles, and products. License:
   Apache 2.0 for code, CC BY 4.0 for data products.
 
-## Cookbooks — production-tested geospatial methods
+## Cookbooks — reproducible geospatial patterns
 
 **Live cookbook docs:** [cog](https://cog.zqmlabs.com) ·
 [duckdb](https://duckdb.zqmlabs.com) · [gdal](https://gdal.zqmlabs.com) ·
@@ -205,7 +205,7 @@ around them.
 
 - **The Observatory** — living map layers, a STAC imagery catalog, a weekly
   intel digest, community briefs, and family guides, all sourced and dated.
-- **Cookbooks** — production-tested open-source methods for every layer of
+- **Cookbooks** — open-source methods with explicit validation scope for every layer of
   the geospatial stack.
 - **Data infrastructure** — DuckDB analytics, PostGIS system of record.
 - **Tooling** — conversion (GDAL), Python (GeoPandas), routing (pgRouting),
