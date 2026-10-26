@@ -146,7 +146,6 @@ Use one row per actionable finding.
 
 The portfolio audit is complete when all in-scope repositories have a recorded review, high-priority findings have been fixed or explicitly blocked with evidence, catalog/link checks are repeatable, CI claims are tied to exact commits, and the remaining gaps are documented without overstating assurance.
 
-
 ## Execution log — 2026-10-26
 
 ### README sample review
