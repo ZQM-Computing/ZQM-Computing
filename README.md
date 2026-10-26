@@ -197,7 +197,7 @@ docker-compose up -d  # pgrouting-cookbook
 ## Who this is for
 
 Geospatial developers, GIS analysts, data engineers, and Python developers
-who need production-tested methods for spatial data workflows — and
+who need reproducible methods with clearly stated validation scope for spatial data workflows — and
 communities and families who want honest, sourced answers about the places
 around them.
 
