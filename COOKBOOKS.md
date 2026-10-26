@@ -6,7 +6,11 @@ This directory explains **what each cookbook is for and why it belongs in the ZQ
 
 **Last inventory reconciliation:** 2026-10-26.
 
-The current search result was reconciled against this document: **91 of 91 repositories are represented exactly once**, and each entry has both a `What it covers` description and a `Why it is included` rationale. This checks catalog coverage and documentation structure—not the technical correctness of every recipe or the current health of every project.
+The current search result was reconciled against this document: **91 of 91 repositories
+are represented exactly once**, and each entry has both a `What it covers` description
+and a `Why it is included` rationale. This checks catalog coverage and documentation
+structure—not the technical correctness of every recipe or the current health of every
+project.
 
 Each entry has two separate claims: a topic summary and a portfolio-fit rationale. These rationales describe the intended role of the tool based on its domain and name; they are not repository-level implementation audits. A later quality pass should verify actual examples, dependency pins, licensing, test evidence, and maintenance state before any cookbook is promoted as production-ready.
 
