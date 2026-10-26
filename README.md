@@ -63,6 +63,8 @@ on it are meant for everyone's use.
 
 ## Complete cookbook directory
 
+For the individual purpose and inclusion rationale for every entry, see the [annotated cookbook directory](COOKBOOKS.md).
+
 The curated table above is the recommended entry point for the core geospatial stack. This directory broadens discovery across the organization. **Every repository has its own inclusion rationale** explaining the capability it is intended to document and why that topic belongs in this collection. These are subject-based rationales inferred from repository names and tool domains; they do not certify implementation depth, test coverage, maintenance, or production readiness. Review each repository's README, license, examples, validation instructions, and current CI before relying on it.
 
 Inventory scope: **91 repositories**, including the `geospatial-cookbooks` umbrella index. This is a name-based inventory, not a maturity or quality ranking. Security/OSINT cookbooks are intended for lawful, authorized, privacy-respecting use; inclusion is not permission to target third parties.
