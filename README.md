@@ -219,7 +219,7 @@ with open geospatial methods — the same craft behind these cookbooks. ZQM
 Computing provides the supporting infrastructure behind those games: the
 methods, tools, and data infrastructure they are built on. The two projects
 are siblings: shared methods, shared love of real places, each standing on
-its own. Nothing here depends on the games.
+its own. The OSINT and geospatial-data cookbooks are intended to feed location data into the ZQM game platform; the core geospatial stack itself does not depend on the games.
 
 ## Licenses
 
