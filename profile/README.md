@@ -30,7 +30,7 @@ ZQM Computing is the geospatial engineering arm of [ZQM Labs](https://github.com
 ## 📚 Pattern Repos
 
 | Repo | Language | Description |
-|---|---|---|
+| --- | --- | --- |
 | [postgis-patterns](https://github.com/ZQM-Computing/postgis-patterns) | PLpgSQL | GiST/SP-GiST/BRIN spatial indexing, spatial joins, vector tiles (ST_AsMVT), geometry data quality |
 | [h3-patterns](https://github.com/ZQM-Computing/h3-patterns) | Python | H3 hexagonal hierarchical grid: indexing, aggregation, visualization, benchmarks |
 | [stac-patterns](https://github.com/ZQM-Computing/stac-patterns) | Python | STAC catalog creation, item validation, search API, bulk operations |
