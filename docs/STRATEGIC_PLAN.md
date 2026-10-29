@@ -114,7 +114,7 @@ Maintain LICENSE, security reporting, contribution guidance, dependency scanning
 Capture baselines before numeric targets.
 
 | Metric | Definition |
-|---|---|
+| --- | --- |
 | Meaningful CI coverage | Active repos whose checks execute meaningful behavior |
 | Reproducible examples | Selected quick starts passing in a clean environment |
 | Documentation integrity | Broken internal/external links, triaged by criticality |
