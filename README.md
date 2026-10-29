@@ -64,7 +64,7 @@ on it are meant for everyone's use.
 
 ## Quick start
 
-```
+```bash
 # Python stack
 pip install geopandas duckdb pystac rasterio h3
 
