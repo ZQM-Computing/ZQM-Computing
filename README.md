@@ -1,12 +1,42 @@
 # ZQM Computing
 
-**ZQM Computing builds geospatial data engineering tools and the Global Observatory** — open-source GIS, spatial data engineering, and self-hosted public-data intelligence. The portfolio covers QGIS/PyQGIS automation, GDAL/OGR conversion, GeoPandas analysis, PostGIS databases, spatial routing, GeoParquet analytics, cloud-optimized GeoTIFFs (COGs), STAC catalogs, OGC APIs, MapLibre maps, H3 aggregation, and local-LLM operations.
+**ZQM Computing delivers geospatial engineering expertise, publishes open-source GIS patterns, and develops the Global Observatory** — open-source GIS, spatial data engineering, and self-hosted public-data intelligence. The portfolio covers QGIS/PyQGIS automation, GDAL/OGR conversion, GeoPandas analysis, PostGIS databases, spatial routing, GeoParquet analytics, cloud-optimized GeoTIFFs (COGs), STAC catalogs, OGC APIs, MapLibre maps, H3 aggregation, and local-LLM operations.
 
 The Global Observatory is a separate application direction: it turns appropriately licensed public sources into mapped, verifiable intelligence. Repository examples, plans, and documentation are not evidence that a live deployment or end-to-end integration exists.
 
 **Volusia County, Florida is the proving ground, not the boundary.** The
 pattern is built to travel anywhere public data allows, and the AI tools grown
 on it are meant for everyone's use.
+
+## Work with ZQM Computing — professional GIS services
+
+ZQM Computing supports engineering, environmental, and geospatial teams with
+defined, evidence-based engagements. The open-source examples below remain free;
+commercial work covers client-specific analysis, implementation, validation, and handoff.
+
+| Service | Proposed starting terms | What the buyer receives |
+| --- | --- | --- |
+| **GIS Workflow Diagnostic** | **$1,500 fixed fee**, five business days after kickoff and agreed inputs | One recurring workflow reviewed; workflow map, labeled time/rework baseline, prioritized recommendations, and a separately scoped implementation proposal |
+| **One-workflow implementation** | **$5,000–$12,000** typical test range, scoped after discovery | One agreed workflow with acceptance criteria, validation, documentation, and handoff |
+| **Fractional geospatial lead** | **$3,500/month** test price for up to 20 hours | Scheduled architecture, code review, and technical direction against a named backlog |
+| **Migration discovery** | **$2,000–$4,000** test range | Source inventory, reconciliation approach, risk register, and migration acceptance criteria |
+
+**Proof of approach:** [Synthetic recurring GIS QA workflow](https://github.com/ZQM-Computing/geopandas-cookbook/blob/main/docs/workflow-diagnostic.md)
+uses declared CRS information, validates representative records, identifies rejected inputs,
+and reconciles results. It is a technical demonstration, **not a client case study,
+production certification, or evidence of quantified savings**.
+
+**First step:** Request a 20-minute fit call at
+[alexzelenski@outlook.com](mailto:alexzelenski@outlook.com). Please describe the
+recurring deliverable, workflow frequency, software and formats, and desired outcome.
+Do not send production credentials or confidential datasets by email before an
+authorized secure data-sharing process is agreed.
+
+Pricing is a proposed market test, not a binding quotation. Scope, availability,
+contracting identity, access permissions, deliverable ownership, and retention
+must be confirmed before engagement. No offer includes a certified survey,
+engineering opinion, environmental site assessment, or regulatory determination.
+Implementation and ongoing support are separate from the diagnostic.
 
 ## Focus
 
@@ -21,11 +51,16 @@ on it are meant for everyone's use.
 
 ## Principles
 
-1. **Public/open sources only.** No credentialed, paywalled, or private data.
+1. **Public research and Observatory:** use only appropriately licensed,
+   publicly available sources; private client data belongs in separate,
+   explicitly authorized consulting workflows, never in the public repository.
 2. **Passive-only against third parties.** Active tools run on owned or
    authorized targets only.
-3. **Verify before claim.** Source, retrieval date, and method on every product.
-4. **No purchases, ever.** The entire stack is free and open-source.
+3. **Verify before claim.** Preserve sources, dates, methods, and actual
+   verification evidence; distinguish sample demonstrations from deployments.
+4. **Free/open-source examples.** The public cookbook stack does not require
+   purchasing consulting services. Paid client-specific work is a separate
+   engagement, not a prerequisite to use the code.
 
 ## The Observatory
 
