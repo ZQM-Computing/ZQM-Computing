@@ -14,6 +14,8 @@ ZQM Computing supports engineering, environmental, and geospatial teams with
 defined, evidence-based engagements. The open-source examples below remain free;
 commercial work covers client-specific analysis, implementation, validation, and handoff.
 
+**For prospective clients and prime contractors:** Review the [GIS capability statement](docs/GIS_SERVICE_CAPABILITIES.md), including service boundaries, technical evidence, and qualification requirements.
+
 | Service | Proposed starting terms | What the buyer receives |
 | --- | --- | --- |
 | **GIS Workflow Diagnostic** | **$1,500 fixed fee**, five business days after kickoff and agreed inputs | One recurring workflow reviewed; workflow map, labeled time/rework baseline, prioritized recommendations, and a separately scoped implementation proposal |
