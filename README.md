@@ -14,7 +14,7 @@ ZQM Computing supports engineering, environmental, and geospatial teams with
 defined, evidence-based engagements. The open-source examples below remain free;
 commercial work covers client-specific analysis, implementation, validation, and handoff.
 
-**For prospective clients and prime contractors:** Review the [one-page GIS capability statement](docs/GIS_SERVICE_CAPABILITIES.md), including service boundaries, technical evidence, and qualification requirements.
+**For prospective clients and prime contractors:** Review the [GIS capability statement](docs/GIS_SERVICE_CAPABILITIES.md), including service boundaries, technical evidence, and qualification requirements.
 
 | Service | Proposed starting terms | What the buyer receives |
 | --- | --- | --- |
