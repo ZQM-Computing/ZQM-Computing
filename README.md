@@ -2,7 +2,7 @@
 
 **Client-focused GIS services fund reusable, open-source geospatial methods and products.** ZQM Computing develops auditable spatial workflows using QGIS/PyQGIS, GDAL/OGR, GeoPandas, PostGIS, GeoParquet, COG/STAC, OGC APIs, MapLibre and related tooling.
 
-[Professional GIS services](#work-with-zqm-computing--professional-gis-services) · [Capability statement](docs/GIS_SERVICE_CAPABILITIES.md) · [Cookbook index](https://github.com/ZQM-Computing/geospatial-cookbooks) · [QGIS implementation patterns](https://github.com/ZQM-Computing/qgis-resources) · [Repositories](https://github.com/ZQM-Computing?tab=repositories)
+[Professional GIS services](#work-with-zqm-computing--professional-gis-services) · [Capability statement](docs/GIS_SERVICE_CAPABILITIES.md) · [GIS service search and evidence map](docs/COMMERCIAL_SEO_KEYWORD_MAP.md) · [Cookbook index](https://github.com/ZQM-Computing/geospatial-cookbooks) · [QGIS implementation patterns](https://github.com/ZQM-Computing/qgis-resources) · [Repositories](https://github.com/ZQM-Computing?tab=repositories)
 
 **Three proposed service lines:** (1) preliminary parcel/environmental GIS screening, (2) spatial data automation and ETL, and (3) web GIS/APIs. The [machine-readable service contract registry](https://github.com/ZQM-Computing/geospatial-cookbooks/blob/main/docs/commercial-service-contracts.json) specifies source provenance, licensing/coverage states, uncertainty, QA and human-review expectations. These are scoped services, **not** claims of a universally available or launched automated platform. The priced GIS Workflow Diagnostic and other test offerings are described below.
 
