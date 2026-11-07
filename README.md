@@ -16,6 +16,8 @@ commercial work covers client-specific analysis, implementation, validation, and
 
 **For prospective clients and prime contractors:** Review the [GIS capability statement](docs/GIS_SERVICE_CAPABILITIES.md), including service boundaries, technical evidence, and qualification requirements.
 
+**Explore specific services:** [GIS workflow automation](docs/services/GIS_WORKFLOW_AUTOMATION.md) · [PostGIS consulting and migration discovery](docs/services/POSTGIS_CONSULTING.md) · [Preliminary environmental GIS screening](docs/services/ENVIRONMENTAL_GIS_SCREENING.md). These are detailed scope references, not standalone live website landing pages; confirm availability before contracting.
+
 | Service | Proposed starting terms | What the buyer receives |
 | --- | --- | --- |
 | **GIS Workflow Diagnostic** | **$1,500 fixed fee**, five business days after kickoff and agreed inputs | One recurring workflow reviewed; workflow map, labeled time/rework baseline, prioritized recommendations, and a separately scoped implementation proposal |
