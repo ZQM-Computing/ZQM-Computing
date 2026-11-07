@@ -1,12 +1,12 @@
-# ZQM Computing
+# ZQM Computing — GIS Engineering & Spatial Data Services
 
-**ZQM Computing delivers geospatial engineering expertise, publishes open-source GIS patterns, and develops the Global Observatory** — open-source GIS, spatial data engineering, and self-hosted public-data intelligence. The portfolio covers QGIS/PyQGIS automation, GDAL/OGR conversion, GeoPandas analysis, PostGIS databases, spatial routing, GeoParquet analytics, cloud-optimized GeoTIFFs (COGs), STAC catalogs, OGC APIs, MapLibre maps, H3 aggregation, and local-LLM operations.
+**Client-focused GIS services fund reusable, open-source geospatial methods and products.** ZQM Computing develops auditable spatial workflows using QGIS/PyQGIS, GDAL/OGR, GeoPandas, PostGIS, GeoParquet, COG/STAC, OGC APIs, MapLibre and related tooling.
 
-The Global Observatory is a separate application direction: it turns appropriately licensed public sources into mapped, verifiable intelligence. Repository examples, plans, and documentation are not evidence that a live deployment or end-to-end integration exists.
+[Professional GIS services](#work-with-zqm-computing--professional-gis-services) · [Capability statement](docs/GIS_SERVICE_CAPABILITIES.md) · [Cookbook index](https://github.com/ZQM-Computing/geospatial-cookbooks) · [QGIS implementation patterns](https://github.com/ZQM-Computing/qgis-resources) · [Repositories](https://github.com/ZQM-Computing?tab=repositories)
 
-**Volusia County, Florida is the proving ground, not the boundary.** The
-pattern is built to travel anywhere public data allows, and the AI tools grown
-on it are meant for everyone's use.
+**Three proposed service lines:** (1) preliminary parcel/environmental GIS screening, (2) spatial data automation and ETL, and (3) web GIS/APIs. The [machine-readable service contract registry](https://github.com/ZQM-Computing/geospatial-cookbooks/blob/main/docs/commercial-service-contracts.json) specifies source provenance, licensing/coverage states, uncertainty, QA and human-review expectations. These are scoped services, **not** claims of a universally available or launched automated platform. The priced GIS Workflow Diagnostic and other test offerings are described below.
+
+The [Global Observatory](https://github.com/ZQM-Computing/zqm-observatory) is a separate public-data intelligence application direction. Repository code, synthetic demonstrations and CI alone do not establish live production availability, verified global coverage or regulatory/scientific conclusions. Volusia County, Florida is a local proving ground rather than the geographic limit; each jurisdiction requires its own data availability and usage-rights checks.
 
 ## Work with ZQM Computing — professional GIS services
 
