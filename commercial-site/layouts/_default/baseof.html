@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ $title := .Params.seo_title | default (printf "%s | ZQM Computing" .Title) }}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+{{ if .Site.Params.publicRelease }}
+<link rel="canonical" href="{{ .Permalink }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ else }}
+<meta name="robots" content="noindex,nofollow">
+{{ end }}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ $title }}">
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color-scheme:light;--ink:#193043;--line:#cddbe1;--accent:#13577a}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:#f8fbfd;line-height:1.65}
+header,main,footer{max-width:980px;margin:auto;padding:1.2rem}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;justify-content:space-between;border-bottom:1px solid var(--line)}
+header a{color:var(--accent)}nav{display:flex;flex-wrap:wrap;gap:.85rem}a{color:var(--accent);text-underline-offset:3px}
+h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.18}h2{line-height:1.3;margin-top:2rem}
+main{min-height:70vh}main p{max-width:75ch}
+.btn{display:inline-block;padding:.75rem 1rem;background:var(--accent);color:white;border-radius:.45rem;text-decoration:none;font-weight:700}
+footer{border-top:1px solid var(--line);font-size:.9rem}a:focus-visible{outline:3px solid #ef9c48;outline-offset:3px}
+</style>
+</head>
+<body>
+<header>
+<strong><a href="{{ "" | relURL }}">ZQM Computing</a></strong>
+<nav aria-label="Main navigation">
+<a href="{{ "" | relURL }}">Home</a>
+<a href="{{ "services/gis-workflow-automation/" | relURL }}">GIS Automation</a>
+<a href="{{ "services/postgis-consulting/" | relURL }}">PostGIS</a>
+<a href="{{ "services/environmental-gis-screening/" | relURL }}">Environmental GIS</a>
+</nav>
+</header>
+<main id="main">{{ block "main" . }}{{ end }}</main>
+<footer>
+<p>ZQM Computing develops geospatial engineering services and open-source reference implementations. ZQM Labs is a separate game studio.</p>
+<p>Contact: <a href="mailto:alexzelenski@outlook.com">alexzelenski@outlook.com</a>. Do not send confidential datasets or credentials via ordinary email.</p>
+</footer>
+</body>
+</html>
