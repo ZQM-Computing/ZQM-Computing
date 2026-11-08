@@ -46,3 +46,12 @@ Organic service landing impressions/clicks, form starts, valid accepted inquirie
 ## Non-authorization
 
 This document does not change `commercial-site/` settings, production routing, site/Docs releases, service availability, form collection, customer data handling, payment collection or contract terms. No PR resulting from this proposal should merge automatically without the required branch/release protections.
+
+## Approved execution update — November 7, 2026
+
+- **Allocation:** Plan and measure engineering effort at **50% ZQM Computing / 50% ZQM Labs** over each rolling four-week execution period. Track actual engineering hours, not PR counts, and reconcile deviations at the next planning review. Security incidents and already-required release gates may temporarily consume capacity without being concealed in the accounting.
+- **Brand separation:** Computing owns geospatial services and reproducible products; Labs owns games, hosting and player experience. Maintain separate buyers, statuses, conversion events, data handling and financial attribution.
+- **Commercial priority is not staffing priority:** The three Computing service offers remain sequenced internally; that sequencing does not override the 50/50 cross-brand engineering allocation.
+- **Implementation path:** Incremental review branches and private/preview builds first. Existing public routes, direct free Wisp demo, privacy controls and noindex/unpublished Computing preview stay unchanged until explicit artifact parity, source provenance and controlled release checks pass.
+- **Promotion evidence:** Exact commit and immutable source SHAs, required CI and security results, representative end-to-end tests, rollback proof, negative publication checks, and paid entitlement → fulfillment → customer inbox proof whenever checkout or delivery is affected. Missing evidence blocks deployment; never infer release readiness from a build-only pass.
+- **Scope of approval:** Authorize safely isolated implementation proposals and tests; this document does not authorize a production release, force merge, weaker branch protection, new paid infrastructure, credential rotation or trust-root changes.
