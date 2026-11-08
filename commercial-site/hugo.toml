@@ -1,0 +1,9 @@
+baseURL = "https://example.invalid/"
+languageCode = "en-us"
+title = "ZQM Computing — GIS Engineering"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  description = "GIS workflow automation, PostGIS consulting, geospatial data engineering, and preliminary environmental GIS screening."
+  publicRelease = false

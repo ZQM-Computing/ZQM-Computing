@@ -1,0 +1,27 @@
+name: Computing commercial preview SEO
+
+on:
+  pull_request:
+    paths:
+      - 'commercial-site/**'
+      - '.github/workflows/commercial-site-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install Hugo
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y hugo
+          hugo version
+      - name: Render Computing preview without publishing
+        run: hugo --source commercial-site --destination public --minify
+      - name: Ensure preview remains excluded from search indexing
+        run: node commercial-site/scripts/verify-preview.cjs commercial-site/public

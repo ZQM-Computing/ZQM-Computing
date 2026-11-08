@@ -1,0 +1,7 @@
+User-agent: *
+{{ if .Site.Params.publicRelease -}}
+Allow: /
+Sitemap: {{ "sitemap.xml" | absURL }}
+{{ else -}}
+Disallow: /
+{{ end -}}

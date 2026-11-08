@@ -1,0 +1,9 @@
+{{- $destination := .Destination -}}
+{{- if and (not (strings.HasPrefix $destination "https://")) (not (strings.HasPrefix $destination "http://")) (strings.HasSuffix $destination ".md") -}}
+  {{- with .Page.GetPage $destination -}}
+    {{- $destination = .RelPermalink -}}
+  {{- else -}}
+    {{- errorf "Unresolved internal markdown link %q in %s" $destination .Page.File.Path -}}
+  {{- end -}}
+{{- end -}}
+<a href="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
