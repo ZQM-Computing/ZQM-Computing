@@ -3,9 +3,11 @@
 Status: **planning design, no customer-data processing or deployment authorization**. Companion to PR #31 and site PR #93.
 
 ## Trust boundaries
+
 Browser on `zqmlabs.com/computing/` → isolated public API endpoint → validated durable acceptance → authorized server-side email delivery → manually qualified sales workflow. The endpoint must not call the private Chiefs, PocketBase admin APIs, Stripe, GitHub write APIs or privileged internal agents. Notification email is **not** a trusted command channel.
 
 ## Minimum data contract (v1 proposal)
+
 - Required: contact name, reply email, service category, project description, privacy acknowledgement.
 - Optional: organization, general region/jurisdiction, desired deliverable, indicative time window.
 - Explicitly disallow attachments, precision coordinates, account credentials and sensitive customer data. State this beside the form; filter and reject risky payloads server-side where feasible, without claiming perfect classification.
@@ -14,11 +16,13 @@ Browser on `zqmlabs.com/computing/` → isolated public API endpoint → validat
 - Collect consent only as appropriate to the actual data-use purpose; never opt prospects into marketing automatically.
 
 ## Submission state machine
+
 `rejected` → no accepted record; `accepted` → authenticated idempotency reference persisted; `queued` → notification task reliably recorded; `notified` → email provider acknowledges acceptance; `delivery_failed` → retry exhausted or explicit operator handling; `closed` → handled under retention rules. Provider acceptance is not proof of inbox arrival.
 
 Only return successful acknowledgement after durable acceptance, not after merely scheduling an unobserved network call. Ensure retries do not create duplicate prospect records or repeated unchecked emails.
 
 ## Operational controls
+
 - Request-size and shape limits; rate limiting with anti-abuse controls; CORS/Origin checks as defense-in-depth, not authentication; bounded request budget.
 - Service-specific least-privilege API token and secrets held in server environment, never in HTML, JS, URLs or Git.
 - Restricted recipients, bounded retries/backoff, dead-letter or recoverable failure path, and redacted operational logs.
@@ -27,6 +31,7 @@ Only return successful acknowledgement after durable acceptance, not after merel
 - No automated scoring or decision making on leads without a separately reviewed policy.
 
 ## Pre-production test matrix
+
 1. Valid minimal input returns a receipt only after durable acceptance.
 2. Invalid email, unsupported service, oversize/unknown fields and malformed JSON are rejected without delivering mail.
 3. Header injection, markup injection, linebreaks in name/email, unicode and hostile text remain inert.
@@ -39,4 +44,5 @@ Only return successful acknowledgement after durable acceptance, not after merel
 10. A qualified business inquiry is routed to Computing; Labs inquiries cannot be silently cross-routed.
 
 ## Integration release gate
+
 The static site PR must not include a live form action targeting an unapproved endpoint. Host form UI and backend may be designed in separate review PRs. Live activation requires security/privacy acceptance, notification delivery evidence, operational ownership and separate owner release approval.
