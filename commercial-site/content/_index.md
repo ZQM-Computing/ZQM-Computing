@@ -21,4 +21,4 @@ Start with a fit discussion, agree authorized inputs and a written scope, valida
 
 Explore the [geospatial cookbook catalog](https://github.com/ZQM-Computing/geospatial-cookbooks) and [GIS capability statement](https://github.com/ZQM-Computing/ZQM-Computing/blob/main/docs/GIS_SERVICE_CAPABILITIES.md). These demonstrate reference methods, not customer endorsements or production guarantees.
 
-[Request a scope conversation](mailto:alexzelenski@outlook.com?subject=GIS%20services%20inquiry)
+[Request a scoped GIS project discussion](contact.md) — share only general requirements at this stage.
