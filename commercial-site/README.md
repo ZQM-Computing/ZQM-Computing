@@ -14,6 +14,20 @@ This is an **unpublished Hugo site prototype** for ZQM Computing's engineering s
 
 From `commercial-site/` run `hugo --gc --minify --destination public` with a locally installed supported Hugo version; inspect the output with your browser and verify `robots.txt` and metadata. No runtime build verification is claimed here.
 
+## Offline public SEO release gate
+
+The existing preview build stays unindexable; the new `scripts/verify-release.cjs` provides a **separate, manual, offline check** for an approved public build artifact. It does not deploy or alter the current site.
+
+After the Computing-specific hostname is verified and an explicitly approved public build is produced in a separate review environment, run:
+
+```sh
+node commercial-site/scripts/verify-release.cjs /path/to/approved-public-artifact https://approved-computing-host.example
+```
+
+Replace the example hostname with the *actual verified HTTPS production origin*. The verifier rejects placeholder origins and checks public robots/sitemap references, five important routes, unique titles, canonical/OG URL alignment, indexability, headings and parseable Organization JSON-LD. The fixture test `node --test commercial-site/scripts/verify-release.test.cjs` runs automatically on preview PRs, but **does not constitute approval to publish**.
+
+Never change `publicRelease` or `baseURL` simply to make a test pass. First approve DNS, brand separation, access controls, rollback, legal and customer data policies; then test the reviewed public artifact and release it through a separate controlled PR.
+
 ## Production readiness checklist
 
 1. Approve Computing-only domain and hosting route.
