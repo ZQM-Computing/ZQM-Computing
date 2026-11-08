@@ -1,5 +1,5 @@
 {{- $destination := .Destination -}}
-{{- if strings.HasSuffix $destination ".md" -}}
+{{- if and (not (strings.HasPrefix $destination "https://")) (not (strings.HasPrefix $destination "http://")) (strings.HasSuffix $destination ".md") -}}
   {{- with .Page.GetPage $destination -}}
     {{- $destination = .RelPermalink -}}
   {{- else -}}
