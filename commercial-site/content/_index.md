@@ -9,9 +9,9 @@ ZQM Computing helps engineering, environmental, infrastructure and GIS teams inv
 
 ## Explore services
 
-- [GIS workflow automation and diagnostic](/services/gis-workflow-automation/) — assess and improve a repeating geospatial process.
-- [PostGIS consulting and migration discovery](/services/postgis-consulting/) — evaluate spatial query performance, database quality and migration risks.
-- [Preliminary environmental GIS screening](/services/environmental-gis-screening/) — map published environmental indicators with documented source limitations.
+- [GIS workflow automation and diagnostic](services/gis-workflow-automation.md) — assess and improve a repeating geospatial process.
+- [PostGIS consulting and migration discovery](services/postgis-consulting.md) — evaluate spatial query performance, database quality and migration risks.
+- [Preliminary environmental GIS screening](services/environmental-gis-screening.md) — map published environmental indicators with documented source limitations.
 
 ## How engagement works
 
