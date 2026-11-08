@@ -21,6 +21,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y hugo
           hugo version
+      - name: Test public release validator against synthetic fixtures
+        run: node --test commercial-site/scripts/verify-release.test.cjs
       - name: Render Computing preview without publishing
         run: hugo --source commercial-site --destination public --minify
       - name: Ensure preview remains excluded from search indexing
