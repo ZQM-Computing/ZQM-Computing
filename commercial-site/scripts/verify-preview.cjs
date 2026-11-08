@@ -49,6 +49,7 @@ for (const route of routes) {
   assert.ok(!(html.match(/<link\b[^>]*>/gi) || []).some(tag => (attrs(tag).rel || "").toLowerCase().split(/\s+/).includes("canonical")),
     route + ": unpublished host must not be canonicalized");
   assert.ok(!meta["og:url"], route + ": unpublished host must not be in og:url");
+  assert.doesNotMatch(html, /<script\\b[^>]*type=["\x27]?application\\/ld\\+json/i, route + ": structured data must remain unpublished");
   assert.equal(meta["og:title"], title, route + ": Open Graph title mismatch");
   assert.equal(meta["twitter:title"], title, route + ": Twitter title mismatch");
   const description = meta.description.trim();
