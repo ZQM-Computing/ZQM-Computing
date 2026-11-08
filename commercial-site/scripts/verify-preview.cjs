@@ -9,7 +9,8 @@ const routes = [
   "index.html",
   "services/gis-workflow-automation/index.html",
   "services/postgis-consulting/index.html",
-  "services/environmental-gis-screening/index.html"
+  "services/environmental-gis-screening/index.html",
+  "contact/index.html"
 ];
 
 function attrs(tag) {
