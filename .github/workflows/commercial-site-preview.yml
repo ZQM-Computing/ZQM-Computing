@@ -23,6 +23,19 @@ jobs:
           hugo version
       - name: Test public release validator against synthetic fixtures
         run: node --test commercial-site/scripts/verify-release.test.cjs
+      - name: Validate isolated synthetic public render without deploying
+        shell: bash
+        run: |
+          set -euo pipefail
+          fixture="$RUNNER_TEMP/computing-public-fixture"
+          cp -a commercial-site "$fixture"
+          sed -i 's#https://example.invalid/#https://gis.example.org/#' "$fixture/hugo.toml"
+          sed -i 's/publicRelease = false/publicRelease = true/' "$fixture/hugo.toml"
+          grep -q 'publicRelease = true' "$fixture/hugo.toml"
+          hugo --source "$fixture" --destination public --minify
+          node commercial-site/scripts/verify-release.cjs "$fixture/public" https://gis.example.org
+          test "$(grep -c 'publicRelease = false' commercial-site/hugo.toml)" -eq 1
+          grep -q 'https://example.invalid/' commercial-site/hugo.toml
       - name: Render Computing preview without publishing
         run: hugo --source commercial-site --destination public --minify
       - name: Ensure preview remains excluded from search indexing
