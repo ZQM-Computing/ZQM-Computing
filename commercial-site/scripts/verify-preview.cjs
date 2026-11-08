@@ -33,6 +33,10 @@ const robots = fs.readFileSync(path.join(root, "robots.txt"), "utf8");
 assert.match(robots, /User-agent:\s*\*/i);
 assert.match(robots, /Disallow:\s*\//i, "preview must block crawler access");
 assert.doesNotMatch(robots, /^Allow:\s*\/$/im, "preview must not advertise crawl access");
+const seenTitles = new Map();
+const seenDescriptions = new Map();
+const knownPaths = new Set(routes.map(route => "/" + route.replace(/index\.html$/, "")));
+const ignoredSchemes = /^(mailto:|tel:|https?:|#)/i;
 for (const route of routes) {
   const html = fs.readFileSync(path.join(root, route), "utf8");
   const meta = metadata(html);
@@ -47,6 +51,22 @@ for (const route of routes) {
   assert.ok(!meta["og:url"], route + ": unpublished host must not be in og:url");
   assert.equal(meta["og:title"], title, route + ": Open Graph title mismatch");
   assert.equal(meta["twitter:title"], title, route + ": Twitter title mismatch");
+  const description = meta.description.trim();
+  assert.ok(!seenTitles.has(title), route + ": duplicate title with " + seenTitles.get(title));
+  seenTitles.set(title, route);
+  assert.ok(!seenDescriptions.has(description), route + ": duplicate description with " + seenDescriptions.get(description));
+  seenDescriptions.set(description, route);
+  const h1Count = (html.match(/<h1\b/gi) || []).length;
+  assert.equal(h1Count, 1, route + ": expected exactly one h1");
+  const anchors = (html.match(/<a\b[^>]*>/gi) || []).map(attrs);
+  const fromUrl = new URL("https://example.invalid/" + route.replace(/index\.html$/, ""));
+  for (const anchor of anchors) {
+    const href = anchor.href || "";
+    if (!href || ignoredSchemes.test(href)) continue;
+    const target = new URL(href, fromUrl);
+    if (target.origin !== fromUrl.origin) continue;
+    assert.ok(knownPaths.has(target.pathname), route + ": internal link does not resolve to a known page: " + href);
+  }
   assert.match(html, /<h1\b/i, route + ": missing h1");
 }
 console.log("Computing preview SEO safeguards passed for " + routes.length + " pages.");
