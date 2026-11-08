@@ -17,6 +17,11 @@
 <meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ $title }}">
+{{ if .Site.Params.publicRelease }}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "Organization" "name" "ZQM Computing" "url" .Site.BaseURL "sameAs" (slice "https://github.com/ZQM-Computing") | jsonify | safeJS }}
+</script>
+{{ end }}
 <style>
 :root{font-family:system-ui,-apple-system,sans-serif;color-scheme:light;--ink:#193043;--line:#cddbe1;--accent:#13577a}
 *{box-sizing:border-box}body{margin:0;color:var(--ink);background:#f8fbfd;line-height:1.65}
