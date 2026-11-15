@@ -8,6 +8,10 @@ this appendix does not approve price changes or publish website offers.
 The [synthetic QA sample](../examples/gis-workflow-qa-synthetic-sample.md)
 is a reproducible demonstration, not a client case study.
 
+The [non-environmental opportunity evidence review](non-environmental-opportunities-evidence-2026-11-14.md)
+checks the submitted market-size/share claims, distinguishes buyer evidence
+from vendor offerings, and defines remaining sales-proof requirements.
+
 **Recommended entry offer:** retain the documented **$1,500 GIS Workflow
 Diagnostic**, then quote one bounded implementation from the findings.
 Automation and data QA belong in the same sales conversation: repetitive

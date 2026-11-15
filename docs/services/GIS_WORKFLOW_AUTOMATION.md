@@ -33,6 +33,10 @@ maps proposed pilot scopes to source code, dated test evidence and acceptance
 criteria. It preserves the existing repository pricing and labels the earlier
 research range as an unapproved alternative.
 
+The [dated market evidence review](planning/non-environmental-opportunities-evidence-2026-11-14.md)
+records source-specific estimates, unverified market-share claims and the
+scope boundaries between automation, data QA and location screening.
+
 The [synthetic QA sample](examples/gis-workflow-qa-synthetic-sample.md)
 shows 8 inputs reconciled into 2 accepted records and 6 reason-coded rejects,
 with the input hash, CRS, software versions and reproduction source. It
