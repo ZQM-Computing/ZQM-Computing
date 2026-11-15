@@ -37,6 +37,13 @@ The [dated market evidence review](planning/non-environmental-opportunities-evid
 records source-specific estimates, unverified market-share claims and the
 scope boundaries between automation, data QA and location screening.
 
+The [pilot tooling standard](planning/gis-pilot-tooling-standard.md) defines
+the minimal Python/file path, optional database and scheduling components,
+and evidence needed for integration. Use the
+[shared source/QA checklist](planning/pipeline-source-qa-checklist.md) and
+[diagnostic/pilot scope templates](planning/workflow-engagement-scope-templates.md)
+to turn an agreed workflow into a reviewable delivery contract.
+
 The [synthetic QA sample](examples/gis-workflow-qa-synthetic-sample.md)
 shows 8 inputs reconciled into 2 accepted records and 6 reason-coded rejects,
 with the input hash, CRS, software versions and reproduction source. It

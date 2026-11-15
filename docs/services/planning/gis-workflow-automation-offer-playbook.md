@@ -12,6 +12,13 @@ The [non-environmental opportunity evidence review](non-environmental-opportunit
 checks the submitted market-size/share claims, distinguishes buyer evidence
 from vendor offerings, and defines remaining sales-proof requirements.
 
+The [tooling standard](gis-pilot-tooling-standard.md) defines conditional stack
+choices, spatial/runtime failure rules and the remaining integration gates.
+Use its [source/QA checklist](pipeline-source-qa-checklist.md) and
+[engagement templates](workflow-engagement-scope-templates.md) for the diagnostic
+and pilot scopes below. These documents add delivery guidance; they do not
+establish a newly completed integrated pipeline or location-screening adapter.
+
 **Recommended entry offer:** retain the documented **$1,500 GIS Workflow
 Diagnostic**, then quote one bounded implementation from the findings.
 Automation and data QA belong in the same sales conversation: repetitive
