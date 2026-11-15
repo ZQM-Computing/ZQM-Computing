@@ -26,6 +26,18 @@ The [GIS Workflow Diagnostic](../GIS_SERVICE_CAPABILITIES.md) is a proposed **$1
 
 These are public reference examples, **not client case studies or verified cost savings**.
 
+## Offer planning and sample output
+
+The [offer planning appendix](planning/gis-workflow-automation-offer-playbook.md)
+maps proposed pilot scopes to source code, dated test evidence and acceptance
+criteria. It preserves the existing repository pricing and labels the earlier
+research range as an unapproved alternative.
+
+The [synthetic QA sample](examples/gis-workflow-qa-synthetic-sample.md)
+shows 8 inputs reconciled into 2 accepted records and 6 reason-coded rejects,
+with the input hash, CRS, software versions and reproduction source. It
+demonstrates configured checks; it does not establish client outcomes.
+
 ## Is QGIS or Python automation appropriate?
 
 Use QGIS Processing when desktop projects and existing QGIS toolchains dominate. Use standalone Python/GeoPandas for explicit data-transform and validation jobs. Use PostGIS when shared spatial queries, data volumes, access controls or transaction semantics demand a database. Select tooling after measuring input constraints rather than assuming one stack fits every client.
