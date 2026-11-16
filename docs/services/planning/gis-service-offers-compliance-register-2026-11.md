@@ -80,13 +80,13 @@ For buyer-facing claims: **no invented turnaround, lead volume, savings percenta
 
 ## Legal authority checklist (verify against current official text)
 
-- Florida 2026 chapter 472: https://www.flsenate.gov/Laws/Statutes/2026/472.005 ; exceptions https://www.flsenate.gov/Laws/Statutes/2026/472.003 ; prohibitions https://www.flsenate.gov/Laws/Statutes/2026/472.031 .
-- Florida engineering chapter 471: https://www.flsenate.gov/Laws/Statutes/2026/471.005 ; qualifications and exceptions https://www.flsenate.gov/Laws/Statutes/2026/471.003 .
-- Florida geology chapter 492: https://www.flsenate.gov/Laws/Statutes/2026/492.102 ; restrictions chapter 492.
-- Florida DOR TAA **25A-011** (November 4, 2025, licensed surveying and mapping professional service): https://floridarevenue.com/TaxLaw/Documents/25A-011.pdf .
-- Florida information-services rule: https://flrules.org/gateway/ruleno.asp?id=12A-1.062 ; professional/personal services Florida 2026 §212.08(7)(v).
-- FDEP wetlands/delineation process: https://floridadep.gov/water/submerged-lands-environmental-resources-coordination/content/wetland-evaluation-and ; FDEP WOTUS: https://floridadep.gov/water/submerged-lands-environmental-resources-coordination/content/wotus-determinations .
-- Florida fictitious names §865.09: https://www.flsenate.gov/Laws/Statutes/2026/865.09 ; Sunbiz instructions: https://dos.fl.gov/sunbiz/start-business/efile/fl-fictitious-name-registration/instructions/ .
+- Florida 2026 chapter 472: `https://www.flsenate.gov/Laws/Statutes/2026/472.005` ; exceptions `https://www.flsenate.gov/Laws/Statutes/2026/472.003` ; prohibitions `https://www.flsenate.gov/Laws/Statutes/2026/472.031` .
+- Florida engineering chapter 471: `https://www.flsenate.gov/Laws/Statutes/2026/471.005` ; qualifications and exceptions `https://www.flsenate.gov/Laws/Statutes/2026/471.003` .
+- Florida geology chapter 492: `https://www.flsenate.gov/Laws/Statutes/2026/492.102` ; restrictions chapter 492.
+- Florida DOR TAA **25A-011** (November 4, 2025, licensed surveying and mapping professional service): `https://floridarevenue.com/TaxLaw/Documents/25A-011.pdf` .
+- Florida information-services rule: `https://flrules.org/gateway/ruleno.asp?id=12A-1.062` ; professional/personal services Florida 2026 §212.08(7)(v).
+- FDEP wetlands/delineation process: `https://floridadep.gov/water/submerged-lands-environmental-resources-coordination/content/wetland-evaluation-and` ; FDEP WOTUS: `https://floridadep.gov/water/submerged-lands-environmental-resources-coordination/content/wotus-determinations` .
+- Florida fictitious names §865.09: `https://www.flsenate.gov/Laws/Statutes/2026/865.09` ; Sunbiz instructions: `https://dos.fl.gov/sunbiz/start-business/efile/fl-fictitious-name-registration/instructions/` .
 - Florida deceptive/unfair trade practices §501.204 and security/breach §501.171; assess client contract terms and affected jurisdictions.
 
 These references explain risk and options; a Florida attorney/qualified tax adviser and the relevant licensing boards may need to determine whether a particular offer/contract is lawful. **No filings, registrations, payment changes or tax advice requests were submitted by this document.**
