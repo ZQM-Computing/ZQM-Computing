@@ -23,7 +23,7 @@ This is **catalog coverage evidence only**. It does not mean that every cookbook
 
 ### ZQM-Computing
 
-- [Organization profile](https://github.com/ZQM-Computing/.github/blob/main/profile/README.md)
+- `Organization profile` (private `.github`)
 - [Annotated cookbook directory](https://github.com/ZQM-Computing/ZQM-Computing/blob/main/COOKBOOKS.md)
 - [Geospatial cookbook index](https://github.com/ZQM-Computing/geospatial-cookbooks)
 - [Organization repository listing](https://github.com/orgs/ZQM-Computing/repositories)
