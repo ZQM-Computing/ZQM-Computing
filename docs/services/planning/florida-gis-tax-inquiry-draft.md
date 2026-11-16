@@ -59,7 +59,7 @@ Please identify current law, regulations and limitations of the response. We are
 Respectfully,
 
 `[Legal seller, responsible signatory, contact address and date]`
-Contact for follow-up: zqmcomputing@gmail.com
+Contact for follow-up: `zqmcomputing@gmail.com`
 
 ### Pre-submission approvals
 
