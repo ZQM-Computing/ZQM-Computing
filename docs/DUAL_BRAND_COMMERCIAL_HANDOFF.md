@@ -58,7 +58,7 @@ This document does not change `commercial-site/` settings, production routing, s
 
 ## Approved launch policy integration — November 7, 2026
 
-The unified site's **homepage places ZQM Labs and ZQM Computing on equal visual footing**. Computing's three packaged services remain sequenced internally; qualified inquiry CTA is distinct from Labs demo/hosting. Both brands retain separate product claims, offer statuses, delivery responsibilities and attribution. The publisher's governing draft policy is `docs/PRODUCTION_LAUNCH_POLICY_20261107.md` in [zqm-labs PR #252](https://github.com/ZQM-Computing/zqm-labs/pull/252).
+The unified site's **homepage places ZQM Labs and ZQM Computing on equal visual footing**. Computing's three packaged services remain sequenced internally; qualified inquiry CTA is distinct from Labs demo/hosting. Both brands retain separate product claims, offer statuses, delivery responsibilities and attribution. The publisher's governing draft policy is `docs/PRODUCTION_LAUNCH_POLICY_20261107.md` in `zqm-labs PR #252`.
 
 For Computing: release only by verified geographic/dataset coverage and capability. Screening remains preliminary, not a licensed survey, engineering opinion or regulatory determination. Each service's preview must use isolated synthetic client data and demonstrate source lineage, coverage gaps, accessibility, secured intake and representative delivery. A public paid offering requires sandbox-verified payment → entitlement → fulfillment → delivered artifact/customer inbox → support/refund. A website CTA alone does not satisfy this contract.
 
